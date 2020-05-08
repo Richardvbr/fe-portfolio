@@ -1,0 +1,104 @@
+<template>
+  <div id="home-container">
+    <div id="home-content">
+      <h1 id="home">I create responsive and easy-to-use <br> websites.</h1>
+      <p>My name is <span>Richard van Brunschot</span> and I'm a <span>Front-end Developer</span>,<br>
+based in Veldhoven, The Netherlands.</p>
+      <a href="#projects"><button class="button-link">See My Work <i class="fas fa-chevron-down"></i></button></a>
+      <img src="../assets/hero_landing.png" alt="Hero-landing">
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Home'
+}
+</script>
+
+<style scoped lang="scss">
+// Variables
+$background-color: #f7f7f7;
+$text-color: #333;
+$accent-color: #038AFF;
+
+:target {
+  padding-top: 240px;
+  margin-top: -240px;
+  display: inline-block;
+}
+
+#home-container {
+  max-width: 1050px;
+  height: 100vh;
+  position: relative;
+  margin: 0 auto;
+
+  #home-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15rem;
+  height: 100%;
+  position: relative;
+
+    a {
+      width: 194px;
+      height: 50px;
+    }
+
+    h1 {
+      color: $text-color;
+      width: 100%;
+      font-family: 'SF', sans-serif;
+      font-weight: bold;
+      font-size: 3.75rem;
+      position: relative;
+    }
+
+    p {
+      color: $text-color;
+      width: 100%;
+      font-family: 'SF', sans-serif;
+      font-size: 1.3rem;
+      margin-top: 5rem;
+      font-weight: 500;
+
+      span:nth-child(1) {
+        font-weight: bold;
+      }
+
+      span:nth-child(2) {
+        font-weight: bold;
+        color: $accent-color;
+      }
+    }
+
+    .button-link {
+      border: none;
+      border-radius: 10px;
+      background-color: $accent-color;
+      color: $background-color;
+      padding: 1rem 2rem;
+      cursor: pointer;
+      font-family: 'SF', sans-serif;
+      font-weight: bold;
+      font-size: 1rem;
+      margin-top: 5rem;
+      text-decoration: none;
+
+      i {
+        margin-left: 10px;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+    img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 675px;
+      height: 275px;
+    }
+}
+</style>
