@@ -36,7 +36,7 @@
     <div id="container-frontend">
       <div class="left-frontend">
         <div class="image-frontend">
-          <a href="https://richardvbr-3d-vue.netlify.com/" target=”_blank” rel=”noreferrer“><img src="../assets/hero_fe.png" alt="3d modeling portfolio"></a>
+          <a href="https://www.brunschot.dev/" target=”_blank” rel=”noreferrer“><img src="../assets/hero_fe.png" alt="3d modeling portfolio"></a>
         </div>
       </div>
       <div class="right-frontend">
@@ -44,13 +44,13 @@
         <p class="frontend-description">{{ portfolio.description }}</p>
         <p class="frontend-software">{{ portfolio.software }}</p>
         <div class="links-buttons right-side">
-          <a href="https://richardvbr-3d-vue.netlify.com/" target=”_blank” rel=”noreferrer“><button class="button-link">Live Website <i class="fas fa-external-link-alt"></i></button></a>
-          <a href="https://github.com/Richardvbr/3d-portfolio-vue" target="blank"><button class="button-link">View Code <i class="fas fa-external-link-alt"></i></button></a>
+          <a href="https://www.brunschot.dev/" target=”_blank” rel=”noreferrer“><button class="button-link">Live Website <i class="fas fa-external-link-alt"></i></button></a>
+          <a href="https://github.com/Richardvbr/fe-portfolio" target="blank"><button class="button-link">View Code <i class="fas fa-external-link-alt"></i></button></a>
         </div>
       </div>
     </div>
     <div id="container-todo">
-      <div class="right-todo">
+      <div class="left-todo">
         <h3>{{ todoapp.title }}</h3>
         <p class="todo-description">{{ todoapp.description }}</p>
         <p class="todo-software">{{ todoapp.software }}</p>
@@ -104,18 +104,13 @@ $background-color: #f7f7f7;
 $text-color: #333;
 $accent-color: #038AFF;
 
-// :target {
-  // padding-top: 240px;
-  // margin-top: -240px;
-  // display: inline-block;
-// }
-
 #projects-container {
   max-width: 1050px;
-  height: 100vh;
+  height: 200vh;
   position: relative;
   margin: 0 auto;
-  font-family: 'SF', sans-serif;
+  font-family: 'Calibre', sans-serif;
+  font-size: 20px;  
   color: $text-color;
 
   .right-side {
@@ -134,9 +129,9 @@ $accent-color: #038AFF;
     max-width: 650px;
     box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.1);
     transition: 0.25s ease;
-
+    
     &:hover {
-      transform: scale(1.005)
+      transform: scale(1.005);
     }
   }
 
@@ -146,6 +141,24 @@ $accent-color: #038AFF;
     font-size: 2rem;
     margin-bottom: 2rem;
     color: $text-color;
+    position: relative;
+    padding-bottom: 0.4rem;
+
+    &:after {
+    content: "";
+    width: 65px;
+    height: 4px;
+    background-color: $accent-color;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    }
+  }
+
+  h3 {
+    color: $accent-color;
+    font-size: 1.75rem;
+    font-family: 'SF', sans-serif;
   }
 
   a {
@@ -193,15 +206,7 @@ $accent-color: #038AFF;
       text-align: left;
 
       h3 {
-        color: $accent-color;
-        font-size: 1.75rem;
         text-align: right;
-      }
-
-      .portfolio3d-description,
-      .portfolio3d-software {
-        color: $text-color;
-        font-size: 1.05rem;
       }
 
       .portfolio3d-description {
@@ -212,8 +217,7 @@ $accent-color: #038AFF;
 
       .portfolio3d-software {
         text-align: right;
-        padding-top: 100px;
-        font-weight: bold;
+        padding-top: 73px;
       }
     }
   }
@@ -239,20 +243,13 @@ $accent-color: #038AFF;
       color: $accent-color;
     }
 
-    .weather-description,
-    .weather-software {
-      color: $text-color;
-      font-size: 1.05rem;
-    }
-
     .weather-description {
       padding-right: 40px;
       padding-top: 20px;
     }
 
     .weather-software {
-      padding-top: 95px;
-      font-weight: bold;
+      padding-top: 73px;
     }
   }
 
@@ -263,6 +260,8 @@ $accent-color: #038AFF;
     width: 100%;
     height: 320px;
     position: relative;
+    font-family: 'Calibre', sans-serif;
+    font-size: 20px;
 
     img {
       height: 320px;
@@ -284,12 +283,6 @@ $accent-color: #038AFF;
         text-align: right;
       }
 
-      .frontend-description,
-      .frontend-software {
-        color: $text-color;
-        font-size: 1.05rem;
-      }
-
       .frontend-description {
         padding-left: 40px;
         text-align: right;
@@ -298,8 +291,7 @@ $accent-color: #038AFF;
 
       .frontend-software {
         text-align: right;
-        padding-top: 100px;
-        font-weight: bold;
+        padding-top: 100px;        
       }
     }
   }
@@ -325,20 +317,13 @@ $accent-color: #038AFF;
       color: $accent-color;
     }
 
-    .todo-description,
-    .todo-software {
-      color: $text-color;
-      font-size: 1.05rem;
-    }
-
     .todo-description {
       padding-right: 40px;
       padding-top: 20px;
     }
 
     .todo-software {
-      padding-top: 95px;
-      font-weight: bold;
+      padding-top: 73px;
     }
   }
 }

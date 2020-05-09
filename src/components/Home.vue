@@ -58,8 +58,8 @@ $accent-color: #038AFF;
     p {
       color: $text-color;
       width: 100%;
-      font-family: 'SF', sans-serif;
-      font-size: 1.3rem;
+      font-family: 'Calibre', sans-serif;
+      font-size: 1.5rem;
       margin-top: 5rem;
       font-weight: 500;
 
@@ -85,10 +85,20 @@ $accent-color: #038AFF;
       font-size: 1rem;
       margin-top: 5rem;
       text-decoration: none;
+      transition: 0.25s ease;
+
+      &:hover {
+        background-color: rgb(43, 156, 255);
+
+        i {
+          transform: translateY(5px)
+        }
+      }
 
       i {
         margin-left: 10px;
         font-size: 1.1rem;
+        transition: 0.25s ease;
       }
     }
   }

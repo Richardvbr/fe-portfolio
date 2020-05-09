@@ -7,7 +7,7 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href=#about>About</a></li>
       <li><a href=#contact>Contact</a></li>
-      <li><a href='../assets/resume.pdf' download class="resume-link">Resume</a></li>
+      <li><a href='/resume.pdf' download class="resume-link">Resume</a></li>
     </ul>
   </nav>
 </template>
