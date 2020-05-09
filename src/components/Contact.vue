@@ -12,7 +12,7 @@
         </div>
       </div>
       <div class="right">
-        <form name='contact' method='POST' action='/form-submit/success'><input type='hidden' name='form-name' value='contact' />
+        <form name='contact' method='POST' data-netlify="true"><input type='hidden' name='form-name' value='contact' />
           <p>
             <label>Name</label>
             <input type="text" name="name">
