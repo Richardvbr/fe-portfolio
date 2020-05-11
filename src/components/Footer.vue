@@ -32,10 +32,4 @@ $text-color: #333;
     padding-top: 5px;
   }
 }
-
-
-@media screen and (max-width: 450px) {
-
-}
-
 </style>

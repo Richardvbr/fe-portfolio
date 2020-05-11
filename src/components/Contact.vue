@@ -202,10 +202,14 @@ $border-color: #b4b4b4;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 700px) {
  #contact-container {
   padding: 100px 2rem 5rem 2rem;
   max-width: 100vw;
+
+  #contact {
+    scroll-margin-top: -75px;
+  }
 
   .flex-container {
     display: flex;

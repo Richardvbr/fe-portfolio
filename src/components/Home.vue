@@ -23,8 +23,8 @@ $text-color: #333;
 $accent-color: #038AFF;
 
 :target {
-  padding-top: 240px;
-  margin-top: -240px;
+  padding-top: 300px;
+  margin-top: -300px;
   display: inline-block;
 }
 
@@ -110,7 +110,8 @@ $accent-color: #038AFF;
 }
 
 // Smartphone
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 700px) {
+
   #home-container {
     padding: 0 2rem;
 
@@ -138,26 +139,4 @@ $accent-color: #038AFF;
 }
 
 // Tablet
-@media screen and (min-width: 451px) and (max-width: 1100px) {
-  #home-container {
-    padding: 0 2rem;
-
-    #home-content {
-      padding-top: 10rem;
-
-      h1 {
-        font-size: 2.5rem;
-      }
-
-      p {
-        font-size: 1.35rem;
-        margin-top: 5rem;
-      }
-    }
-
-    img {
-      display: none;
-    }
-  }
-}
 </style>

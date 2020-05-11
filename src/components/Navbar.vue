@@ -82,7 +82,7 @@ $accent-color: #038AFF;
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 700px) {
   #nav-container {
   padding: 0 2rem;
   align-items: center;

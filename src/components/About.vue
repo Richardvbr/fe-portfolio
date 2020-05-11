@@ -79,6 +79,7 @@ $accent-color: #038AFF;
       columns: 2;
       width: 550px;
       list-style: none;
+      font-size: 18px;
 
 
       i {
@@ -89,11 +90,15 @@ $accent-color: #038AFF;
   }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 700px){
  #about-container {
   padding-top: 50px;
   max-width: 100vw;
   padding: 0 2rem;
+
+  #about {
+    scroll-margin-top: -150px;
+  }
 
   .flex-container {
     display: flex;

@@ -331,11 +331,15 @@ $accent-color: #038AFF;
 }
 
 // Smartphone
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 700px) {
   #projects-container {
   max-width: 100vw;
   padding: 0 2rem;
   font-size: 18px;  
+
+  #projects {
+    scroll-margin-top: 50px;
+  }
 
   .right-side {
     a {
@@ -379,6 +383,8 @@ $accent-color: #038AFF;
       text-align: center;
       text-decoration: none;
       justify-content: space-between;
+      position: relative;
+      display: block;
   }
 
   #container-3d {
@@ -452,15 +458,15 @@ $accent-color: #038AFF;
   #container-frontend {
     display: block;
     width: 100%;
+    margin-bottom: 75px;
 
     img {
-      height: 225px;
+      height: 100%;
     }
 
     .links-buttons {
       display: flex;
       position: relative;
-      justify-content: space-between;
     }
 
     .right-frontend {
@@ -487,7 +493,7 @@ $accent-color: #038AFF;
 
   #container-todo {
 
-    margin-top: 225px;
+    margin-top: 200px;
     margin-bottom: 100px;
     display: flex;
     flex-direction: column-reverse;
