@@ -12,19 +12,19 @@
         <p class="portfolio3d-description">{{ portfolio3d.description }}</p>
         <p class="portfolio3d-software">{{ portfolio3d.software }}</p>
         <div class="links-buttons right-side">
-          <a href="https://richardvbr-3d-vue.netlify.com/" target=”_blank” rel=”noreferrer“><button class="button-link">Live Website <i class="fas fa-external-link-alt"></i></button></a>
-          <a href="https://github.com/Richardvbr/3d-portfolio-vue" target=”_blank” rel=”noreferrer“><button class="button-link">View Code <i class="fas fa-external-link-alt"></i></button></a>
+          <a href="https://richardvbr-3d-vue.netlify.com/" target=”_blank” rel=”noreferrer“ class="button-link">Live Website <i class="fas fa-external-link-alt"></i></a>
+          <a href="https://github.com/Richardvbr/3d-portfolio-vue" target=”_blank” rel=”noreferrer“ class="button-link">View Code <i class="fas fa-external-link-alt"></i></a>
         </div>
       </div>
     </div>
-    <!-- <div id="container-weather">
-      <div class="right-weather">
+    <div id="container-weather">
+      <div class="left-weather">
         <h3>{{ weatherapp.title }}</h3>
         <p class="weather-description">{{ weatherapp.description }}</p>
         <p class="weather-software">{{ weatherapp.software }}</p>
         <div class="links-buttons left-side">
-          <a href="https://todays-weather-rvbr.herokuapp.com/" target=”_blank” rel=”noreferrer“><button class="button-link">Live Website <i class="fas fa-external-link-alt"></i></button></a>
-          <a href="https://github.com/Richardvbr/Todaysweather" target=”_blank” rel=”noreferrer“><button class="button-link">View Code <i class="fas fa-external-link-alt"></i></button></a>
+          <a href="https://todays-weather-rvbr.herokuapp.com/" target=”_blank” rel=”noreferrer“ class="button-link">Live Website <i class="fas fa-external-link-alt"></i></a>
+          <a href="https://github.com/Richardvbr/Todaysweather" target=”_blank” rel=”noreferrer“ class="button-link">View Code <i class="fas fa-external-link-alt"></i></a>
         </div>
       </div>
       <div class="right-weather">
@@ -44,8 +44,8 @@
         <p class="frontend-description">{{ portfolio.description }}</p>
         <p class="frontend-software">{{ portfolio.software }}</p>
         <div class="links-buttons right-side">
-          <a href="https://www.brunschot.dev/" target=”_blank” rel=”noreferrer“><button class="button-link">Live Website <i class="fas fa-external-link-alt"></i></button></a>
-          <a href="https://github.com/Richardvbr/fe-portfolio" target="blank"><button class="button-link">View Code <i class="fas fa-external-link-alt"></i></button></a>
+          <a href="https://www.brunschot.dev/" target=”_blank” rel=”noreferrer“ class="button-link">Live Website <i class="fas fa-external-link-alt"></i></a>
+          <a href="https://github.com/Richardvbr/fe-portfolio" target="blank" class="button-link">View Code <i class="fas fa-external-link-alt"></i></a>
         </div>
       </div>
     </div>
@@ -55,8 +55,8 @@
         <p class="todo-description">{{ todoapp.description }}</p>
         <p class="todo-software">{{ todoapp.software }}</p>
         <div class="links-buttons left-side">
-          <a href="https://richardvbr-todoapp.netlify.com/" target=”_blank” rel=”noreferrer“><button class="button-link">Live Website <i class="fas fa-external-link-alt"></i></button></a>
-          <a href="https://github.com/Richardvbr/Todo-app" target=”_blank” rel=”noreferrer“><button class="button-link">View Code <i class="fas fa-external-link-alt"></i></button></a>
+          <a href="https://richardvbr-todoapp.netlify.com/" target=”_blank” rel=”noreferrer“ class="button-link">Live Website <i class="fas fa-external-link-alt"></i></a>
+          <a href="https://github.com/Richardvbr/Todo-app" target=”_blank” rel=”noreferrer“ class="button-link">View Code <i class="fas fa-external-link-alt"></i></a>
         </div>
       </div>
       <div class="right-todo">
@@ -64,7 +64,7 @@
           <a href="https://richardvbr-todoapp.netlify.com/" target=”_blank” rel=”noreferrer“><img src="../assets/hero_todo.jpg" alt="to-do app"></a>
         </div>
       </div>
-    </div> -->
+    </div>
   </div>
 </template>
 
@@ -106,7 +106,6 @@ $accent-color: #038AFF;
 
 #projects-container {
   max-width: 1050px;
-  // height: 200vh;
   position: relative;
   margin: 0 auto;
   font-family: 'Calibre', sans-serif;
@@ -115,13 +114,13 @@ $accent-color: #038AFF;
 
   .right-side {
     a {
-      margin-left: 44px;
+      margin-left: 20px;
     }
   }
 
   .left-side {
     a {
-      margin-right: 44px;
+      margin-right: 20px;
     }
   }
 
@@ -164,6 +163,7 @@ $accent-color: #038AFF;
 
   a {
     font-family: 'SF', sans-serif;
+    text-decoration: none;
   }
 
   .button-link {
@@ -198,6 +198,7 @@ $accent-color: #038AFF;
 
     .links-buttons {
       display: flex;
+      justify-content: space-between;
       position: absolute;
       bottom: 0;
       right: 0;
@@ -329,98 +330,60 @@ $accent-color: #038AFF;
   }
 }
 
+// Smartphone
 @media screen and (max-width: 450px) {
   #projects-container {
-  max-width: 1050px;
-  position: relative;
-  margin: 0 auto;
+  max-width: 100vw;
   padding: 0 2rem;
-  font-family: 'Calibre', sans-serif;
-  font-size: 20px;  
-  color: $text-color;
+  font-size: 18px;  
 
   .right-side {
     a {
-      margin-left: 15px;
+      margin-left: 0;
     }
   }
 
   .left-side {
     a {
-      margin-right: 15px;
+      margin-right: 0;
     }
   }
 
   img {
-    width: 84.5%;
+    width: 100%;
     display: block;
-    box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.1);
-    
+    line-height: 0;
   }
 
   h2 {
-    padding-top: 6rem;
-    font-family: 'SF', sans-serif;
+    padding-top: 5rem;
     font-size: 2rem;
     margin-bottom: 2rem;
-    color: $text-color;
-    position: relative;
     padding-bottom: 0.4rem;
-
-    &:after {
-    content: "";
-    width: 65px;
-    height: 4px;
-    background-color: $accent-color;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    }
   }
 
   h3 {
-    color: $accent-color;
-    font-size: 1.25rem;
-    font-family: 'SF', sans-serif;
+    font-size: 20px;
   }
 
   p {
     font-size: 18px;
+    text-align: center;
   }
 
   a {
     font-family: 'SF', sans-serif;
   }
 
-  .button-link {
-    border: 2px solid $accent-color;
-    border-radius: 13px;
-    background-color: $background-color;
-    color: $accent-color;
-    padding: 0.6rem 1rem;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1rem;
-    font-family: 'SF', sans-serif;
-    transition: 0.25s ease;
-
-    &:hover {
-      color: $background-color;
-      background-color: $accent-color;
-    }
-
-    i {
-      margin-left: 10px;
-    }
+  .links-buttons {
+      text-align: center;
+      text-decoration: none;
+      justify-content: space-between;
   }
 
   #container-3d {
     display: block;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100vw;
-    height: 320px;
-    position: relative;
+    width: 100%;
 
     .links-buttons {
       display: flex;
@@ -433,126 +396,122 @@ $accent-color: #038AFF;
       h3 {
         text-align: center;
         padding-top: 10px;
-        width: 85%;
+        width: 100%;
       }
 
       .portfolio3d-description {
         padding-left: 0;
         text-align: center;
         padding-top: 5px;
-        width: 85%;
+        width: 100%;
       }
 
       .portfolio3d-software {
         text-align: center;
-        width: 85%;
+        width: 100%;
         padding-top: 25px;
       }
     }
   }
 
   #container-weather {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    display: flex;
+    margin-top: 250px;
+    margin-bottom: 75px;
+    flex-direction: column-reverse;
     width: 100%;
-    height: 320px;
-    justify-content: space-between;
-    position: relative;
 
-    .links-buttons {
-      display: flex;
-      position: absolute;
-      bottom: 0;
-      left: 0;
+    .image-weather {
+      width: 100%;
     }
 
     h3 {
-      font-size: 2rem;
-      color: $accent-color;
+      font-size: 20px;
+      text-align: center;
+      padding-top: 10px;
+    }
+
+    .links-buttons {
+      position: relative;
+      display: flex;
     }
 
     .weather-description {
-      padding-right: 40px;
-      padding-top: 20px;
+      text-align: center;
+      width: 100%;
+      padding-right: 0;
+      padding-top: 5px;
     }
 
     .weather-software {
-      padding-top: 73px;
+      text-align: center;
+      padding-top: 25px;
+      width: 100%;
     }
   }
 
   #container-frontend {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: block;
     width: 100%;
-    height: 320px;
-    position: relative;
-    font-family: 'Calibre', sans-serif;
-    font-size: 20px;
 
     img {
-      height: 320px;
+      height: 225px;
     }
 
     .links-buttons {
       display: flex;
-      position: absolute;
-      bottom: 0;
-      right: 0;
+      position: relative;
+      justify-content: space-between;
     }
 
     .right-frontend {
-      text-align: left;
+      text-align: center;
 
       h3 {
-        color: $accent-color;
-        font-size: 1.75rem;
-        text-align: right;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 10px;
       }
 
       .frontend-description {
-        padding-left: 40px;
-        text-align: right;
-        padding-top: 20px;
+        padding-left: 0;
+        text-align: center;
+        padding-top: 5px;
       }
 
       .frontend-software {
-        text-align: right;
-        padding-top: 100px;        
+        text-align: center;
+        padding-top: 25px;      
       }
     }
   }
 
   #container-todo {
-    margin-top: 100px;
+
+    margin-top: 225px;
     margin-bottom: 100px;
     display: flex;
+    flex-direction: column-reverse;
     width: 100%;
-    height: 320px;
-    justify-content: space-between;
-    position: relative;
 
     .links-buttons {
+      position: relative;
       display: flex;
-      position: absolute;
-      bottom: 0;
-      left: 0;
     }
 
     h3 {
-      font-size: 2rem;
+      font-size: 20px;
+      text-align: center;
       color: $accent-color;
+      padding-top: 10px
     }
 
     .todo-description {
-      padding-right: 40px;
-      padding-top: 20px;
+      padding-right: 0;
+      padding-top: 5px;
     }
 
     .todo-software {
-      padding-top: 95px;
+      padding-top: 25px;
     }
   }
 }  

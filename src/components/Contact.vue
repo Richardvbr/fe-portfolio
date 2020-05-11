@@ -201,4 +201,49 @@ $border-color: #b4b4b4;
     }
   }
 }
+
+@media screen and (max-width: 450px) {
+ #contact-container {
+  padding: 100px 2rem 5rem 2rem;
+  max-width: 100vw;
+
+  .flex-container {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .left {
+      max-width: 375px;
+      padding-top: 20px;
+
+      h3 {
+        font-family: 'SF', sans-serif;
+        color: $accent-color;
+        padding-top: 30px;
+        font-size: 20px;
+      }
+
+      a {
+        text-decoration: none;
+        color: $text-color;
+        margin-right: 20px;
+      }
+    }
+
+    form {
+      grid-template-columns: 1fr;
+    }
+
+    .submit-button {
+      button {
+      margin-left: 0;
+      margin: 15px 0;
+      }
+    }
+
+    .full {
+      grid-column: 1;
+    }
+  }
+} 
+}
 </style>

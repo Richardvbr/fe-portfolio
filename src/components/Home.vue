@@ -4,7 +4,7 @@
       <h1 id="home">I create responsive and easy-to-use <br> websites.</h1>
       <p>My name is <span>Richard van Brunschot</span> and I'm a <span>Front-end Developer</span>,<br>
 based in Veldhoven, The Netherlands.</p>
-      <a href="#projects"><button class="button-link">See My Work <i class="fas fa-chevron-down"></i></button></a>
+      <a href="#projects" class="button-link">See My Work <i class="fas fa-chevron-down"></i></a>
       <img src="../assets/hero_landing.png" alt="Hero-landing">
     </div>
   </div>
@@ -42,11 +42,6 @@ $accent-color: #038AFF;
   height: 100%;
   position: relative;
 
-    a {
-      width: 210px;
-      height: 0;
-    }
-
     h1 {
       color: $text-color;
       width: 100%;
@@ -82,6 +77,7 @@ $accent-color: #038AFF;
       margin-top: 5rem;
       text-decoration: none;
       transition: 0.25s ease;
+      width: 200px;
 
       &:hover {
         background-color: rgb(43, 156, 255);

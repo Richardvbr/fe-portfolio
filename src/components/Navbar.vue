@@ -85,13 +85,19 @@ $accent-color: #038AFF;
 @media screen and (max-width: 450px) {
   #nav-container {
   padding: 0 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 6rem;
 
   .logo img {
-    max-width: 40px;
+    max-width: 35px;
+    margin: 0.5rem;
   }
 
   ul {
     display: flex;
+    padding: 0 0 1rem 0;
     li a {
       padding: 0.5rem 1rem;
     }

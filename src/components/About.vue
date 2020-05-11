@@ -88,4 +88,32 @@ $accent-color: #038AFF;
     }
   }
 }
+
+@media screen and (max-width: 450px){
+ #about-container {
+  padding-top: 50px;
+  max-width: 100vw;
+  padding: 0 2rem;
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .description{
+      text-align: left;
+      width: 100%;
+      padding-bottom: 10px;
+    } 
+
+    ul {
+      width: 100%;
+
+      i {
+        padding: 10px 10px 0 0;
+      }
+    }
+  }
+} 
+}
 </style>
