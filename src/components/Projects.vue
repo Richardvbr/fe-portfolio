@@ -17,7 +17,7 @@
         </div>
       </div>
     </div>
-    <div id="container-weather">
+    <!-- <div id="container-weather">
       <div class="right-weather">
         <h3>{{ weatherapp.title }}</h3>
         <p class="weather-description">{{ weatherapp.description }}</p>
@@ -64,7 +64,7 @@
           <a href="https://richardvbr-todoapp.netlify.com/" target=”_blank” rel=”noreferrer“><img src="../assets/hero_todo.jpg" alt="to-do app"></a>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -327,5 +327,234 @@ $accent-color: #038AFF;
       padding-top: 95px;
     }
   }
+}
+
+@media screen and (max-width: 450px) {
+  #projects-container {
+  max-width: 1050px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 2rem;
+  font-family: 'Calibre', sans-serif;
+  font-size: 20px;  
+  color: $text-color;
+
+  .right-side {
+    a {
+      margin-left: 15px;
+    }
+  }
+
+  .left-side {
+    a {
+      margin-right: 15px;
+    }
+  }
+
+  img {
+    width: 84.5%;
+    display: block;
+    box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.1);
+    
+  }
+
+  h2 {
+    padding-top: 6rem;
+    font-family: 'SF', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: $text-color;
+    position: relative;
+    padding-bottom: 0.4rem;
+
+    &:after {
+    content: "";
+    width: 65px;
+    height: 4px;
+    background-color: $accent-color;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    }
+  }
+
+  h3 {
+    color: $accent-color;
+    font-size: 1.25rem;
+    font-family: 'SF', sans-serif;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  a {
+    font-family: 'SF', sans-serif;
+  }
+
+  .button-link {
+    border: 2px solid $accent-color;
+    border-radius: 13px;
+    background-color: $background-color;
+    color: $accent-color;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: 'SF', sans-serif;
+    transition: 0.25s ease;
+
+    &:hover {
+      color: $background-color;
+      background-color: $accent-color;
+    }
+
+    i {
+      margin-left: 10px;
+    }
+  }
+
+  #container-3d {
+    display: block;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    height: 320px;
+    position: relative;
+
+    .links-buttons {
+      display: flex;
+      position: relative;
+    }
+
+    .right-3d {
+      text-align: center;
+
+      h3 {
+        text-align: center;
+        padding-top: 10px;
+        width: 85%;
+      }
+
+      .portfolio3d-description {
+        padding-left: 0;
+        text-align: center;
+        padding-top: 5px;
+        width: 85%;
+      }
+
+      .portfolio3d-software {
+        text-align: center;
+        width: 85%;
+        padding-top: 25px;
+      }
+    }
+  }
+
+  #container-weather {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    width: 100%;
+    height: 320px;
+    justify-content: space-between;
+    position: relative;
+
+    .links-buttons {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    h3 {
+      font-size: 2rem;
+      color: $accent-color;
+    }
+
+    .weather-description {
+      padding-right: 40px;
+      padding-top: 20px;
+    }
+
+    .weather-software {
+      padding-top: 73px;
+    }
+  }
+
+  #container-frontend {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 320px;
+    position: relative;
+    font-family: 'Calibre', sans-serif;
+    font-size: 20px;
+
+    img {
+      height: 320px;
+    }
+
+    .links-buttons {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    .right-frontend {
+      text-align: left;
+
+      h3 {
+        color: $accent-color;
+        font-size: 1.75rem;
+        text-align: right;
+      }
+
+      .frontend-description {
+        padding-left: 40px;
+        text-align: right;
+        padding-top: 20px;
+      }
+
+      .frontend-software {
+        text-align: right;
+        padding-top: 100px;        
+      }
+    }
+  }
+
+  #container-todo {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    width: 100%;
+    height: 320px;
+    justify-content: space-between;
+    position: relative;
+
+    .links-buttons {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    h3 {
+      font-size: 2rem;
+      color: $accent-color;
+    }
+
+    .todo-description {
+      padding-right: 40px;
+      padding-top: 20px;
+    }
+
+    .todo-software {
+      padding-top: 95px;
+    }
+  }
+}  
 }
 </style>

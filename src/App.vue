@@ -3,8 +3,8 @@
     <Navbar></Navbar>
     <Home></Home>
     <Projects></Projects>
-    <About></About>
-    <Contact></Contact>
+    <!-- <About></About> -->
+    <!-- <Contact></Contact> -->
   </div>
 </template>
 
@@ -12,8 +12,8 @@
 import Navbar from './components/Navbar.vue'
 import Home from './components/Home.vue'
 import Projects from './components/Projects.vue'
-import About from './components/About.vue'
-import Contact from './components/Contact.vue'
+// import About from './components/About.vue'
+// import Contact from './components/Contact.vue'
 
 export default {
   name: 'App',
@@ -21,8 +21,8 @@ export default {
     Navbar,
     Home,
     Projects,
-    About,
-    Contact
+    // About,
+    // Contact
   }
 }
 </script>

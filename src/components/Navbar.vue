@@ -1,5 +1,5 @@
 <template>
-  <nav id="nav-container" class="anchor">
+  <nav id="nav-container">
     <div class="logo">
       <a href="#home"><img src="../../public/android-chrome-192x192.png" alt="Logo"></a>
     </div>
@@ -80,6 +80,28 @@ $accent-color: #038AFF;
         background-color: $accent-color;
       }
     }
+}
+
+@media screen and (max-width: 450px) {
+  #nav-container {
+  padding: 0 2rem;
+
+  .logo img {
+    max-width: 40px;
+  }
+
+  ul {
+    display: flex;
+    li a {
+      padding: 0.5rem 1rem;
+    }
+  }
+
+    .resume-link {
+      display: none;
+
+    }
+  }
 }
 
 </style>

@@ -43,8 +43,8 @@ $accent-color: #038AFF;
   position: relative;
 
     a {
-      width: 194px;
-      height: 50px;
+      width: 210px;
+      height: 0;
     }
 
     h1 {
@@ -128,6 +128,10 @@ $accent-color: #038AFF;
       p {
         font-size: 1.35rem;
         margin-top: 5rem;
+      }
+
+      .button-link {
+        margin-top: 3.5rem;
       }
     }
 
