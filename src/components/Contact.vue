@@ -54,9 +54,9 @@ $border-color: #b4b4b4;
 }
 
 #contact-container {
-  padding-top: 300px;
+  padding: 300px 0;
   max-width: 1050px;
-  height: 100vh;
+  // height: 100vh;
   position: relative;
   margin: 0 auto;
   font-family: 'Calibre', sans-serif;

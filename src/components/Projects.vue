@@ -36,7 +36,7 @@
     <div id="container-frontend">
       <div class="left-frontend">
         <div class="image-frontend">
-          <a href="https://www.brunschot.dev/" target=”_blank” rel=”noreferrer“><img src="../assets/hero_fe.png" alt="3d modeling portfolio"></a>
+          <a href="https://www.brunschot.dev/" target=”_blank” rel=”noreferrer“><img src="../assets/hero_fe.jpg" alt="3d modeling portfolio"></a>
         </div>
       </div>
       <div class="right-frontend">
@@ -75,22 +75,22 @@ export default {
     return  {
       portfolio3d: {
         title: '3D Modeling Portfolio',
-        description: 'A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.',
+        description: "Portfolio website to showcase 3D models. Vue.js single-page application to provide a performant and modern experience. New portfolio items are added to the grid automatically using JSON and for loops.",
         software: 'Vue.js, Vue Router, HTML5, SCSS, AdobeXD'
       },
       weatherapp: {
         title: 'Weather App',
-        description: 'A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.',
+        description: "Weather application that displays local current weather information. Fetches weather data using the Dark Sky API. API calls are done on a Node/Express back-end so that the API key is hidden and secured.",
         software: 'JavaScript, HTML5, SCSS, AdobeXD',
       },
       portfolio: {
         title: 'Front-end Portfolio',
-        description: 'A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.',
+        description: "Portfolio website to showcase my work as a front-end developer. Opted for a clean design that is easy on the eyes. Learned a lot about responsive design and animations.",
         software: 'Vue.js, HTML5, SCSS, AdobeXD',
       },
       todoapp: {
         title: 'To-do App',
-        description: 'A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.',
+        description: "To-do application that utilizes the browser's Local Storage to remember your to-do lists. Shows current date and prevents empty inputs.",
         software: 'JavaScript, HTML5, CSS',  
       }
     }
@@ -106,7 +106,7 @@ $accent-color: #038AFF;
 
 #projects-container {
   max-width: 1050px;
-  height: 200vh;
+  // height: 200vh;
   position: relative;
   margin: 0 auto;
   font-family: 'Calibre', sans-serif;
@@ -132,6 +132,7 @@ $accent-color: #038AFF;
     
     &:hover {
       transform: scale(1.005);
+      box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.2);
     }
   }
 
@@ -217,7 +218,7 @@ $accent-color: #038AFF;
 
       .portfolio3d-software {
         text-align: right;
-        padding-top: 73px;
+        padding-top: 75px;
       }
     }
   }
@@ -323,7 +324,7 @@ $accent-color: #038AFF;
     }
 
     .todo-software {
-      padding-top: 73px;
+      padding-top: 95px;
     }
   }
 }

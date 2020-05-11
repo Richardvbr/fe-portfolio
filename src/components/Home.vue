@@ -28,6 +28,7 @@ $accent-color: #038AFF;
   display: inline-block;
 }
 
+// Default
 #home-container {
   max-width: 1050px;
   height: 100vh;
@@ -63,12 +64,7 @@ $accent-color: #038AFF;
       margin-top: 5rem;
       font-weight: 500;
 
-      span:nth-child(1) {
-        font-weight: bold;
-      }
-
       span:nth-child(2) {
-        font-weight: bold;
         color: $accent-color;
       }
     }
@@ -107,8 +103,61 @@ $accent-color: #038AFF;
       position: absolute;
       bottom: 0;
       right: 0;
-      width: 675px;
-      height: 275px;
+      width: 608px;
+      height: 248px;
     }
+}
+
+// Laptop
+@media screen and (min-width: 1101px) and (max-width: 1500px) {
+  
+}
+
+// Smartphone
+@media screen and (max-width: 450px) {
+  #home-container {
+    padding: 0 2rem;
+
+    #home-content {
+      padding-top: 10rem;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1.35rem;
+        margin-top: 5rem;
+      }
+    }
+
+    img {
+      display: none;
+    }
+  }
+}
+
+// Tablet
+@media screen and (min-width: 451px) and (max-width: 1100px) {
+  #home-container {
+    padding: 0 2rem;
+
+    #home-content {
+      padding-top: 10rem;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1.35rem;
+        margin-top: 5rem;
+      }
+    }
+
+    img {
+      display: none;
+    }
+  }
 }
 </style>

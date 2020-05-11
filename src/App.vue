@@ -52,18 +52,6 @@ export default {
   font-weight: 700;
 }
 
-@font-face {
-  font-family: 'Calibre';
-  src: url('../src/assets/CalibreLight.woff') format('woff');
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: 'Calibre';
-  src: url('../src/assets/CalibreMedium.woff') format('woff');
-  font-weight: 600;
-}
-
 html {
   scroll-behavior: smooth;
 }
