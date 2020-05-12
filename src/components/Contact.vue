@@ -15,15 +15,15 @@
         <form name='contact' method='POST' action="https://usebasin.com/f/b2c012128685"><input type='hidden' name='form-name' value='contact' />
           <p>
             <label>Name</label>
-            <input type="text" name="name">
+            <input type="text" name="name" required>
           </p>
           <p>
             <label>Email</label>
-            <input type="email" name="email">
+            <input type="email" name="email" required>
           </p>
           <p class="full">
             <label>Message</label>
-            <textarea name="message" rows="5"></textarea>
+            <textarea name="message" rows="5" required></textarea>
           </p>
           <div class="full submit-button">
             <button type="submit">Submit</button>
