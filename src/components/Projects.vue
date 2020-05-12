@@ -1,7 +1,7 @@
 <template>
   <div id="projects-container">
     <h2 id="projects">Projects</h2>
-    <div id="container-3d">
+    <div id="container-3d" data-aos="fade-left" data-aos-delay="150">
       <div class="left-3d">
         <div class="image-3d">
           <a href="https://richardvbr-3d-vue.netlify.com/" target=”_blank” rel=”noreferrer“><img src="../assets/hero_3d.jpg" alt="3d modeling portfolio"></a>
@@ -17,7 +17,7 @@
         </div>
       </div>
     </div>
-    <div id="container-weather">
+    <div id="container-weather" data-aos="fade-right" data-aos-delay="150">
       <div class="left-weather">
         <h3>{{ weatherapp.title }}</h3>
         <p class="weather-description">{{ weatherapp.description }}</p>
@@ -33,7 +33,7 @@
         </div>
       </div>
     </div>
-    <div id="container-frontend">
+    <div id="container-frontend" data-aos="fade-left" data-aos-delay="150">
       <div class="left-frontend">
         <div class="image-frontend">
           <a href="https://www.brunschot.dev/" target=”_blank” rel=”noreferrer“><img src="../assets/hero_fe.jpg" alt="3d modeling portfolio"></a>
@@ -49,7 +49,7 @@
         </div>
       </div>
     </div>
-    <div id="container-todo">
+    <div id="container-todo" data-aos="fade-right" data-aos-delay="150">
       <div class="left-todo">
         <h3>{{ todoapp.title }}</h3>
         <p class="todo-description">{{ todoapp.description }}</p>

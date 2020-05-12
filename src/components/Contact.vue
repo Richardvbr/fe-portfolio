@@ -1,5 +1,5 @@
 <template>
-  <div id="contact-container">
+  <div id="contact-container" data-aos="fade-right" data-aos-delay="150">
     <h2 id="contact">Contact</h2>
     <div class="flex-container">
       <div class="left">
