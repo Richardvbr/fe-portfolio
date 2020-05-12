@@ -202,6 +202,7 @@ $border-color: #b4b4b4;
   }
 }
 
+// Smartphone
 @media screen and (max-width: 700px) {
  #contact-container {
   padding: 100px 2rem 5rem 2rem;
@@ -246,6 +247,61 @@ $border-color: #b4b4b4;
 
     .full {
       grid-column: 1;
+    }
+  }
+} 
+}
+
+// Tablet
+@media screen and (min-width: 701px) and (max-width: 1049px) {
+ #contact-container {
+  padding: 100px 2rem 5rem 2rem;
+  max-width: 100vw;
+
+  #contact {
+    scroll-margin-top: -75px;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .left {
+      max-width: 375px;
+      padding-top: 20px;
+
+      h3 {
+        font-family: 'SF', sans-serif;
+        color: $accent-color;
+        padding-top: 30px;
+        font-size: 20px;
+      }
+
+      a {
+        text-decoration: none;
+        color: $text-color;
+        margin-right: 20px;
+      }
+    }
+
+    form {
+      grid-template-columns: 1fr;
+    }
+
+    .submit-button {
+      button {
+      width: 25%;
+      margin-left: 0;
+      margin: 15px 0;
+      }
+    }
+
+    .full {
+      grid-column: 1;
+    }
+
+    textarea {
+      width: 50%;
     }
   }
 } 

@@ -265,10 +265,6 @@ $accent-color: #038AFF;
     font-family: 'Calibre', sans-serif;
     font-size: 20px;
 
-    img {
-      height: 320px;
-    }
-
     .links-buttons {
       display: flex;
       position: absolute;
@@ -390,6 +386,11 @@ $accent-color: #038AFF;
   #container-3d {
     display: block;
     width: 100%;
+    margin-bottom: 225px;
+
+    .image-3d {
+      height: 100%;
+    }
 
     .links-buttons {
       display: flex;
@@ -421,13 +422,12 @@ $accent-color: #038AFF;
   }
 
   #container-weather {
-    margin-top: 250px;
-    margin-bottom: 75px;
-    flex-direction: column-reverse;
+    flex-flow: column-reverse;
     width: 100%;
+    margin-bottom: 100px;
 
     .image-weather {
-      width: 100%;
+      height: 100%;
     }
 
     h3 {
@@ -457,10 +457,10 @@ $accent-color: #038AFF;
 
   #container-frontend {
     display: block;
+    margin-bottom: 200px;
     width: 100%;
-    margin-bottom: 75px;
 
-    img {
+    .image-frontend {
       height: 100%;
     }
 
@@ -492,12 +492,14 @@ $accent-color: #038AFF;
   }
 
   #container-todo {
-
-    margin-top: 200px;
     margin-bottom: 100px;
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
+
+    .image-todo {
+      height: 100%;
+    }
 
     .links-buttons {
       position: relative;
@@ -518,6 +520,204 @@ $accent-color: #038AFF;
 
     .todo-software {
       padding-top: 25px;
+    }
+  }
+}  
+}
+
+// Tablet
+@media screen and (min-width: 701px) and (max-width: 1049px){
+  #projects-container {
+  max-width: 100vw;
+  padding: 0 2rem;
+  font-size: 18px;  
+
+  #projects {
+    scroll-margin-top: 50px;
+  }
+
+
+  img {
+    width: 100%;
+    line-height: 0;
+  }
+
+  h2 {
+    padding-top: 5rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.4rem;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+
+  #container-3d {
+    display: block;
+    width: 100%;
+    margin-bottom: 500px;
+
+
+    .image-3d {
+      text-align: center;
+      height: 100%;
+    }
+
+    .links-buttons {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .right-3d {
+      text-align: center;
+
+      h3 {
+        text-align: center;
+        padding-top: 10px;
+        width: 100%;
+      }
+
+      .portfolio3d-description {
+        padding-left: 0;
+        text-align: center;
+        padding-top: 5px;
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .portfolio3d-software {
+        text-align: center;
+        width: 100%;
+        padding: 25px 0 10px 0;
+      }
+    }
+  }
+
+  #container-weather {
+    flex-flow: column-reverse;
+    width: 100%;
+    margin-bottom: 100px;
+
+    .image-weather {
+      text-align: center;
+      height: 100%;
+    }
+
+    h3 {
+      font-size: 20px;
+      text-align: center;
+      padding-top: 10px;
+    }
+
+    .links-buttons {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .weather-description {
+      text-align: center;
+      width: 90%;
+      margin: 0 auto;
+      padding-right: 0;
+      padding-top: 5px;
+    }
+
+    .weather-software {
+      text-align: center;
+      padding-top: 25px;
+      width: 100%;
+    }
+  }
+
+  #container-frontend {
+    display: block;
+    margin-bottom: 500px;
+    width: 100%;
+
+    .image-frontend {
+      text-align: center;
+      height: 100%;
+    }
+
+    .links-buttons {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .right-frontend {
+      text-align: center;
+
+      h3 {
+        font-size: 20px;
+        text-align: center;
+        padding-top: 10px;
+      }
+
+      .frontend-description {
+        padding-left: 0;
+        text-align: center;
+        padding-top: 5px;
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .frontend-software {
+        text-align: center;
+        padding-top: 25px;      
+      }
+    }
+  }
+
+  #container-todo {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+
+    .image-todo {
+      text-align: center;
+      height: 100%;
+    }
+
+    .links-buttons {
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    h3 {
+      font-size: 20px;
+      text-align: center;
+      color: $accent-color;
+      padding-top: 10px
+    }
+
+    .todo-description {
+      padding-right: 0;
+      padding-top: 5px;
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .todo-software {
+      padding-top: 25px;
+      text-align: center;
     }
   }
 }  

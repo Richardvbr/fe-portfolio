@@ -139,4 +139,33 @@ $accent-color: #038AFF;
 }
 
 // Tablet
+@media screen and (min-width: 701px) and (max-width: 1049px) {
+
+  #home-container {
+    padding: 0 2rem;
+
+    #home-content {
+      padding-top: 15rem;
+
+      h1 {
+        font-size: 5rem;
+      }
+
+      p {
+        font-size: 2rem;
+        margin-top: 5rem;
+      }
+
+      .button-link {
+        margin-top: 3.5rem;
+        font-size: 1.5rem;
+        width: 250px;
+      }
+    }
+
+    img {
+      display: none;
+    }
+  }
+}
 </style>

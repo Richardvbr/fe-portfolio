@@ -97,7 +97,7 @@ $accent-color: #038AFF;
   padding: 0 2rem;
 
   #about {
-    scroll-margin-top: -150px;
+    scroll-margin-top: -125px;
   }
 
   .flex-container {
@@ -108,6 +108,38 @@ $accent-color: #038AFF;
     .description{
       text-align: left;
       width: 100%;
+      padding-bottom: 10px;
+    } 
+
+    ul {
+      width: 100%;
+
+      i {
+        padding: 10px 10px 0 0;
+      }
+    }
+  }
+} 
+}
+
+@media screen and (min-width: 701px) and (max-width: 1049px){
+ #about-container {
+  max-width: 100vw;
+  padding: 0 2rem;
+  font-size: 22px;
+
+  #about {
+    scroll-margin-top: -125px;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .description{
+      text-align: left;
+      width: 80%;
       padding-bottom: 10px;
     } 
 

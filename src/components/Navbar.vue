@@ -82,6 +82,7 @@ $accent-color: #038AFF;
     }
 }
 
+// Smartphone
 @media screen and (max-width: 700px) {
   #nav-container {
   padding: 0 2rem;
@@ -106,6 +107,36 @@ $accent-color: #038AFF;
     .resume-link {
       display: none;
 
+    }
+  }
+}
+
+// Tablet
+@media screen and (min-width: 701px) and (max-width: 1049px) {
+  #nav-container {
+  padding: 0 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 6rem;
+  width: 100%;
+
+  .logo img {
+    max-width: 35px;
+    margin: 0.5rem;
+  }
+
+  ul {
+    font-size: 1.25rem;
+    display: flex;
+    padding: 0 0 1rem 0;
+    li a {
+      padding: 0.5rem 1rem;
+    }
+  }
+
+    .resume-link {
+      display: none;
     }
   }
 }

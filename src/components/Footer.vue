@@ -28,10 +28,10 @@ $text-color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5px;
+    padding-top: 7px;
 
     a {
-      color: $text-color;
+      color: rgb(90, 90, 90);
       text-decoration: none;
     }
   }
