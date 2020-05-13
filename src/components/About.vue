@@ -1,5 +1,5 @@
 <template>
-  <div id="about-container" data-aos="fade-left" data-aos-delay="150">
+  <div id="about-container" data-aos="fade-up" data-aos-delay="0" data-aos-anchor-placement="top-center">
     <div class="flex-container">
       <h2 id="about">About Me</h2>
       <p class="description">
