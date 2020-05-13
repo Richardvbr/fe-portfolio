@@ -353,6 +353,11 @@ $accent-color: #038AFF;
     width: 100%;
     display: block;
     line-height: 0;
+    
+    &:hover {
+      transform: none;
+      box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.1);
+    } 
   }
 
   h2 {
@@ -540,6 +545,11 @@ $accent-color: #038AFF;
   img {
     width: 100%;
     line-height: 0;
+
+    &:hover {
+      transform: none;
+      box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.1);
+    } 
   }
 
   h2 {

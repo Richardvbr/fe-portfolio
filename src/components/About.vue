@@ -91,13 +91,19 @@ $accent-color: #038AFF;
 }
 
 @media screen and (max-width: 700px){
+:target {
+  padding-top: 0;
+  margin-top: -0;
+  display: inline-block;
+}
+
  #about-container {
   padding-top: 50px;
   max-width: 100vw;
   padding: 0 2rem;
 
   #about {
-    scroll-margin-top: -125px;
+    scroll-margin-top: 125px;
   }
 
   .flex-container {
@@ -129,7 +135,7 @@ $accent-color: #038AFF;
   font-size: 22px;
 
   #about {
-    scroll-margin-top: -125px;
+    scroll-margin-top: -60px;
   }
 
   .flex-container {

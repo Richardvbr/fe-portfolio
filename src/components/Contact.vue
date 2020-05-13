@@ -48,8 +48,8 @@ $accent-color: #038AFF;
 $border-color: #b4b4b4;
 
 :target {
-  padding-top: 220px;
-  margin-top: -220px;
+  padding-top: 200px;
+  margin-top: -200px;
   display: inline-block;
 }
 
@@ -204,12 +204,18 @@ $border-color: #b4b4b4;
 
 // Smartphone
 @media screen and (max-width: 700px) {
+:target {
+  padding-top: 0;
+  margin-top: -0;
+  display: inline-block;
+}
+
  #contact-container {
   padding: 100px 2rem 5rem 2rem;
   max-width: 100vw;
 
   #contact {
-    scroll-margin-top: -75px;
+    scroll-margin-top: 200px;
   }
 
   .flex-container {
