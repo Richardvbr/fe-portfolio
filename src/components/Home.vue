@@ -106,7 +106,14 @@ $accent-color: #038AFF;
 
 // Laptop
 @media screen and (min-width: 1101px) and (max-width: 1500px) {
-  
+   #home-container {
+    padding: 0 2rem;
+
+    img {
+      width: 517px;
+      height: 211px;
+    }
+  } 
 }
 
 // Smartphone
