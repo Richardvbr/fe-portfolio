@@ -85,7 +85,7 @@ export default {
       },
       portfolio: {
         title: 'Front-end Portfolio',
-        description: "Portfolio website to showcase my work as a front-end developer. Opted for a clean design that is easy on the eyes. Learned a lot about responsive design and animations.",
+        description: "Portfolio website to showcase my work as a front-end developer. Opted for a clean design that is easy on the eyes. Responsive design and scroll-based animations.",
         software: 'Vue.js, HTML5, SCSS, AdobeXD',
       },
       todoapp: {

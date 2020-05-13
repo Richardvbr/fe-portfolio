@@ -1,6 +1,7 @@
 .DS_Store
 node_modules
 /dist
+googlebfa7256db76eb134.html
 
 # local env files
 .env.local
