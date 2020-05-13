@@ -1,7 +1,7 @@
 <template>
   <div id="home-container">
     <div id="home-content">
-      <h1 id="home">I create responsive and easy-to-use <br> websites.</h1>
+      <h1 id="home">I create responsive and easy-to-use <br class="hide-laptop"> websites.</h1>
       <p>My name is <span>Richard van Brunschot</span> and I'm a <span>Front-end Developer</span>,<br>
 based in Veldhoven, The Netherlands.</p>
       <a href="#projects" class="button-link">See My Work <i class="fas fa-chevron-down"></i></a>
@@ -109,9 +109,17 @@ $accent-color: #038AFF;
    #home-container {
     padding: 0 2rem;
 
+    .hide-laptop {
+      display: none;
+    }
+
+    #home-content {
+      padding-top: 5rem;
+    }
+
     img {
-      width: 414px;
-      height: 169px;
+      width: 497px;
+      height: 203px;
     }
   } 
 }
