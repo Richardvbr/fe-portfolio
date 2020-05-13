@@ -60,7 +60,7 @@ $accent-color: #038AFF;
       font-weight: 500;
 
       span:nth-child(2) {
-        color: $accent-color;
+        // color: $accent-color;
       }
     }
 
