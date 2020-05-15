@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="footer">
-      <a href="https://github.com/Richardvbr">Design &amp; Code by Richard van Brunschot</a>
+      <a href="https://github.com/Richardvbr" target="_blank">Design &amp; Code by Richard van Brunschot</a>
     </div>
   </div>
 </template>

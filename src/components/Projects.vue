@@ -395,6 +395,7 @@ $accent-color: #038AFF;
 
     .image-3d {
       height: 100%;
+      text-align: center;
     }
 
     .links-buttons {
@@ -432,6 +433,7 @@ $accent-color: #038AFF;
     margin-bottom: 100px;
 
     .image-weather {
+      text-align: center;
       height: 100%;
     }
 
