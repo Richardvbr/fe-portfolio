@@ -1,24 +1,8 @@
-# fe-portfolio
+## Front-end Development Portfolio
 
-## Project setup
-```
-npm install
-```
+### Description
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Portfolio website to showcase my work as a front-end developer. Opted for a clean design that is easy on the eyes. Responsive design and scroll-based animations.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Tools
+Vue.js, HTML5, SCSS, AdobeXD
