@@ -169,7 +169,7 @@ $accent-color: #038AFF;
 
         i {
           font-size: 30px;
-          color: #222;
+          color: #444;
           transition: 0.2s ease;
 
           &:hover {
