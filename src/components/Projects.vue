@@ -37,7 +37,7 @@ export default {
           url: 'https://richardvbr-3d-vue.netlify.app/',
           title: '3D Modeling Portfolio',
           software: ['Vue.js', 'Vue Router', 'HTML5', 'SCSS', 'AdobeXD'],
-          description: "Portfolio website to showcase 3D models. Vue.js single-page application to provide a performant and modern experience. New portfolio items are added to the grid automatically using JSON and for loops.",
+          description: "Portfolio website to showcase 3D models. Vue.js single-page application to provide a performant and modern experience. New portfolio items are added to the grid automatically using JSON and for-loops.",
           github: 'https://github.com/Richardvbr/3d-portfolio-vue'
         },
         {
@@ -55,7 +55,7 @@ export default {
           url: 'https://www.brunschot.dev/',
           title: 'Front-end Portfolio',
           software: ['Vue.js', 'HTML5', 'SCSS', 'AdobeXD'],
-          description: "Portfolio website to showcase my work as a front-end developer. Opted for a clean design that is easy on the eyes. Responsive design and scroll-based animations.",
+          description: "Portfolio website to showcase my work as a front-end developer. New portfolio items are added to the grid automatically using JSON and for-loops. Opted for a clean design that is easy on the eyes. Responsive design and scroll-based animations.",
           github: 'https://github.com/Richardvbr/fe-portfolio'
         },
         {
