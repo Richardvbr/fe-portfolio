@@ -1,71 +1,28 @@
 <template>
-  <div id="projects-container">
+  <section id="projects-container">
     <h2 id="projects">Projects</h2>
-    <div id="container-3d" data-aos="fade-up" data-aos-delay="150">
-      <div class="left-3d">
-        <div class="image-3d">
-          <a href="https://richardvbr-3d-vue.netlify.com/" target=”_blank” rel=”noreferrer“><img src="../assets/hero_3d.jpg" alt="3d modeling portfolio"></a>
+    <div class="grid-container" data-aos="fade-up" data-aos-delay="0">
+      <!-- Loop over JSON object containing all project data and render a card for each entry -->
+      <div class="grid-item" v-for="(project, portfolioLoop) in portfolioJSON" :key="portfolioLoop">
+        <div>
+          <a :href="project.url"><img :src="project.img" :alt="project.imgAlt" /></a>
         </div>
-      </div>
-      <div class="right-3d">
-        <h3>{{ portfolio3d.title }}</h3>
-        <p class="portfolio3d-description">{{ portfolio3d.description }}</p>
-        <p class="portfolio3d-software">{{ portfolio3d.software }}</p>
-        <div class="links-buttons right-side">
-          <a href="https://richardvbr-3d-vue.netlify.com/" target=”_blank” rel=”noreferrer“ class="button-link">Live Website <i class="fas fa-external-link-alt"></i></a>
-          <a href="https://github.com/Richardvbr/3d-portfolio-vue" target=”_blank” rel=”noreferrer“ class="button-link">View Code <i class="fas fa-external-link-alt"></i></a>
+        <div>
+          <h3>{{ project.title }}</h3>
         </div>
-      </div>
-    </div>
-    <div id="container-weather" data-aos="fade-up" data-aos-delay="150">
-      <div class="left-weather">
-        <h3>{{ weatherapp.title }}</h3>
-        <p class="weather-description">{{ weatherapp.description }}</p>
-        <p class="weather-software">{{ weatherapp.software }}</p>
-        <div class="links-buttons left-side">
-          <a href="https://todays-weather-rvbr.herokuapp.com/" target=”_blank” rel=”noreferrer“ class="button-link">Live Website <i class="fas fa-external-link-alt"></i></a>
-          <a href="https://github.com/Richardvbr/Todaysweather" target=”_blank” rel=”noreferrer“ class="button-link">View Code <i class="fas fa-external-link-alt"></i></a>
+        <div class="software">
+          <p>{{ project.software.join(', ') }}</p>
         </div>
-      </div>
-      <div class="right-weather">
-        <div class="image-weather">
-          <a href="https://todays-weather-rvbr.herokuapp.com/" target=”_blank” rel=”noreferrer“><img src="../assets/hero_weather.jpg" alt="3d modeling portfolio"></a>
+        <div>
+          <p>{{ project.description }}</p>
+        </div>
+        <div class="flex-icons">
+          <div class="item1"><a :href="project.github"><i class="fab fa-github"></i></a></div>
+          <div class="item2"><a :href="project.url"><i class="fas fa-external-link-alt"></i></a></div>
         </div>
       </div>
     </div>
-    <div id="container-frontend" data-aos="fade-up" data-aos-delay="150">
-      <div class="left-frontend">
-        <div class="image-frontend">
-          <a href="https://www.brunschot.dev/" target=”_blank” rel=”noreferrer“><img src="../assets/hero_fe.jpg" alt="3d modeling portfolio"></a>
-        </div>
-      </div>
-      <div class="right-frontend">
-        <h3>{{ portfolio.title }}</h3>
-        <p class="frontend-description">{{ portfolio.description }}</p>
-        <p class="frontend-software">{{ portfolio.software }}</p>
-        <div class="links-buttons right-side">
-          <a href="https://www.brunschot.dev/" target=”_blank” rel=”noreferrer“ class="button-link">Live Website <i class="fas fa-external-link-alt"></i></a>
-          <a href="https://github.com/Richardvbr/fe-portfolio" target="blank" class="button-link">View Code <i class="fas fa-external-link-alt"></i></a>
-        </div>
-      </div>
-    </div>
-    <div id="container-todo" data-aos="fade-up" data-aos-delay="150">
-      <div class="left-todo">
-        <h3>{{ todoapp.title }}</h3>
-        <p class="todo-description">{{ todoapp.description }}</p>
-        <p class="todo-software">{{ todoapp.software }}</p>
-        <div class="links-buttons left-side">
-          <a href="https://richardvbr-todoapp.netlify.com/" target=”_blank” rel=”noreferrer“ class="button-link">Live Website <i class="fas fa-external-link-alt"></i></a>
-          <a href="https://github.com/Richardvbr/Todo-app" target=”_blank” rel=”noreferrer“ class="button-link">View Code <i class="fas fa-external-link-alt"></i></a>
-        </div>
-      </div>
-      <div class="right-todo">
-        <div class="image-todo">
-          <a href="https://richardvbr-todoapp.netlify.com/" target=”_blank” rel=”noreferrer“><img src="../assets/hero_todo.jpg" alt="to-do app"></a>
-        </div>
-      </div>
-    </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -73,26 +30,44 @@ export default {
   name: 'Projects',
   data: function () {
     return  {
-      portfolio3d: {
-        title: '3D Modeling Portfolio',
-        description: "Portfolio website to showcase 3D models. Vue.js single-page application to provide a performant and modern experience. New portfolio items are added to the grid automatically using JSON and for loops.",
-        software: 'Vue.js, Vue Router, HTML5, SCSS, AdobeXD'
-      },
-      weatherapp: {
-        title: 'Weather App',
-        description: "Weather application that displays local current weather information. Fetches weather data using the Dark Sky API. API calls are done on a Node/Express back-end so that the API key is hidden and secured.",
-        software: 'JavaScript, HTML5, SCSS, AdobeXD',
-      },
-      portfolio: {
-        title: 'Front-end Portfolio',
-        description: "Portfolio website to showcase my work as a front-end developer. Opted for a clean design that is easy on the eyes. Responsive design and scroll-based animations.",
-        software: 'Vue.js, HTML5, SCSS, AdobeXD',
-      },
-      todoapp: {
-        title: 'To-do App',
-        description: "To-do application that utilizes the browser's Local Storage to remember your to-do lists. Shows current date and prevents empty inputs.",
-        software: 'JavaScript, HTML5, CSS',  
-      }
+      portfolioJSON: [
+        {
+          img: require("../assets/hero_3d.jpg"),
+          imgAlt: '3D Modeling Portfolio',
+          url: 'https://richardvbr-3d-vue.netlify.app/',
+          title: '3D Modeling Portfolio',
+          software: ['Vue.js', 'Vue Router', 'HTML5', 'SCSS', 'AdobeXD'],
+          description: "Portfolio website to showcase 3D models. Vue.js single-page application to provide a performant and modern experience. New portfolio items are added to the grid automatically using JSON and for loops.",
+          github: 'https://github.com/Richardvbr/3d-portfolio-vue'
+        },
+        {
+          img: require("../assets/hero_weather.jpg"),
+          imgAlt: 'Weather App',
+          url: 'https://todays-weather-rvbr.herokuapp.com/',
+          title: 'Weather App',
+          software: ['JavaScript', 'HTML5', 'SCSS', 'AdobeXD'],
+          description: "Weather application that displays local current weather information. Fetches weather data using the Dark Sky API. API calls are done on a Node/Express back-end so that the API key is hidden and secured.",
+          github: 'https://github.com/Richardvbr/Todaysweather'
+        },
+        {
+          img: require("../assets/hero_fe.jpg"),
+          imgAlt: 'Front-end Portfolio',
+          url: 'https://www.brunschot.dev/',
+          title: 'Front-end Portfolio',
+          software: ['Vue.js', 'HTML5', 'SCSS', 'AdobeXD'],
+          description: "Portfolio website to showcase my work as a front-end developer. Opted for a clean design that is easy on the eyes. Responsive design and scroll-based animations.",
+          github: 'https://github.com/Richardvbr/fe-portfolio'
+        },
+        {
+          img: require("../assets/hero_todo.jpg"),
+          imgAlt: 'To-do App',
+          url: 'https://richardvbr-todoapp.netlify.app/',
+          title: 'To-do App',
+          software: ['JavaScript', 'HTML5', 'CSS'],
+          description: "To-do application that utilizes the browser's Local Storage to remember your to-do lists. Shows current date and prevents empty inputs.",
+          github: 'https://github.com/Richardvbr/Todo-app'
+        }
+      ]
     }
   }
 }
@@ -108,38 +83,16 @@ $accent-color: #038AFF;
   max-width: 1050px;
   position: relative;
   margin: 0 auto;
-  font-family: 'Calibre', sans-serif;
-  font-size: 20px;  
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;  
+  font-weight: 500;
   color: $text-color;
-
-  .right-side {
-    a {
-      margin-left: 20px;
-    }
-  }
-
-  .left-side {
-    a {
-      margin-right: 20px;
-    }
-  }
-
-  img {
-    max-width: 650px;
-    box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.1);
-    transition: 0.25s ease;
-    
-    &:hover {
-      transform: scale(1.005);
-      box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.2);
-    }
-  }
 
   h2 {
     padding-top: 6rem;
-    font-family: 'SF', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     color: $text-color;
     position: relative;
     padding-bottom: 0.4rem;
@@ -155,173 +108,73 @@ $accent-color: #038AFF;
     }
   }
 
-  h3 {
-    color: $accent-color;
-    font-size: 1.75rem;
-    font-family: 'SF', sans-serif;
-  }
+  .grid-container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
 
-  a {
-    font-family: 'SF', sans-serif;
-    text-decoration: none;
-  }
+    .grid-item {
+      width: 100%;
+      height: 40rem;
+      background-color: #fff;
+      box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+      position: relative;
+      transition: 0.2s ease;
 
-  .button-link {
-    border: 2px solid $accent-color;
-    border-radius: 13px;
-    background-color: $background-color;
-    color: $accent-color;
-    padding: 0.6rem 1rem;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1rem;
-    font-family: 'SF', sans-serif;
-    transition: 0.25s ease;
+      &:hover {
+        transform: translateY(-3px);
+      }
 
-    &:hover {
-      color: $background-color;
-      background-color: $accent-color;
-    }
-
-    i {
-      margin-left: 10px;
-    }
-  }
-
-  #container-3d {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    height: 320px;
-    position: relative;
-
-    .links-buttons {
-      display: flex;
-      justify-content: space-between;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
-
-    .right-3d {
-      text-align: left;
+      img {
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
+      }
 
       h3 {
-        text-align: right;
+        padding: 0 1.5rem;
+        font-size: 1.85rem;
+        font-weight: bold;
+        margin-top: 1.2rem;
       }
 
-      .portfolio3d-description {
-        padding-left: 40px;
-        text-align: right;
-        padding-top: 20px;
+      .software {
+        p {
+          padding: 0 1.5rem;
+          margin-bottom: 3rem;
+          font-size: 0.9rem;
+        }
       }
 
-      .portfolio3d-software {
-        text-align: right;
-        padding-top: 75px;
-      }
-    }
-  }
-
-  #container-weather {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    display: flex;
-    width: 100%;
-    height: 320px;
-    justify-content: space-between;
-    position: relative;
-
-    .links-buttons {
-      display: flex;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
-
-    h3 {
-      font-size: 2rem;
-      color: $accent-color;
-    }
-
-    .weather-description {
-      padding-right: 40px;
-      padding-top: 20px;
-    }
-
-    .weather-software {
-      padding-top: 73px;
-    }
-  }
-
-  #container-frontend {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    height: 320px;
-    position: relative;
-    font-family: 'Calibre', sans-serif;
-    font-size: 20px;
-
-    .links-buttons {
-      display: flex;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
-
-    .right-frontend {
-      text-align: left;
-
-      h3 {
-        color: $accent-color;
-        font-size: 1.75rem;
-        text-align: right;
+      p {
+        padding: 0 1.5rem;
       }
 
-      .frontend-description {
-        padding-left: 40px;
-        text-align: right;
-        padding-top: 20px;
+      .flex-icons {
+        display: flex;
+
+        .item1 {
+          position: absolute;
+          bottom: 1.5rem;
+          right: 5rem;
+        }
+
+        .item2 {
+          position: absolute;
+          bottom: 1.5rem;
+          right: 1.5rem;
+        }
+
+        i {
+          font-size: 30px;
+          color: #222;
+          transition: 0.2s ease;
+
+          &:hover {
+            color: $accent-color;
+          }
+        }
       }
-
-      .frontend-software {
-        text-align: right;
-        padding-top: 100px;        
-      }
-    }
-  }
-
-  #container-todo {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    display: flex;
-    width: 100%;
-    height: 320px;
-    justify-content: space-between;
-    position: relative;
-
-    .links-buttons {
-      display: flex;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
-
-    h3 {
-      font-size: 2rem;
-      color: $accent-color;
-    }
-
-    .todo-description {
-      padding-right: 40px;
-      padding-top: 20px;
-    }
-
-    .todo-software {
-      padding-top: 95px;
     }
   }
 }
@@ -335,29 +188,6 @@ $accent-color: #038AFF;
 
   #projects {
     scroll-margin-top: 50px;
-  }
-
-  .right-side {
-    a {
-      margin-left: 0;
-    }
-  }
-
-  .left-side {
-    a {
-      margin-right: 0;
-    }
-  }
-
-  img {
-    width: 100%;
-    display: block;
-    line-height: 0;
-    
-    &:hover {
-      transform: none;
-      box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.1);
-    } 
   }
 
   h2 {
@@ -376,157 +206,11 @@ $accent-color: #038AFF;
     text-align: center;
   }
 
-  a {
-    font-family: 'SF', sans-serif;
-  }
+  .grid-container {
+    grid-template-columns: 1fr;
 
-  .links-buttons {
-      text-align: center;
-      text-decoration: none;
-      justify-content: space-between;
-      position: relative;
-      display: block;
-  }
-
-  #container-3d {
-    display: block;
-    width: 100%;
-    margin-bottom: 225px;
-
-    .image-3d {
-      height: 100%;
-      text-align: center;
-    }
-
-    .links-buttons {
-      display: flex;
-      position: relative;
-    }
-
-    .right-3d {
-      text-align: center;
-
-      h3 {
-        text-align: center;
-        padding-top: 10px;
-        width: 100%;
-      }
-
-      .portfolio3d-description {
-        padding-left: 0;
-        text-align: center;
-        padding-top: 5px;
-        width: 100%;
-      }
-
-      .portfolio3d-software {
-        text-align: center;
-        width: 100%;
-        padding-top: 25px;
-      }
-    }
-  }
-
-  #container-weather {
-    flex-flow: column-reverse;
-    width: 100%;
-    margin-bottom: 100px;
-
-    .image-weather {
-      text-align: center;
-      height: 100%;
-    }
-
-    h3 {
-      font-size: 20px;
-      text-align: center;
-      padding-top: 10px;
-    }
-
-    .links-buttons {
-      position: relative;
-      display: flex;
-    }
-
-    .weather-description {
-      text-align: center;
-      width: 100%;
-      padding-right: 0;
-      padding-top: 5px;
-    }
-
-    .weather-software {
-      text-align: center;
-      padding-top: 25px;
-      width: 100%;
-    }
-  }
-
-  #container-frontend {
-    display: block;
-    margin-bottom: 200px;
-    width: 100%;
-
-    .image-frontend {
-      height: 100%;
-    }
-
-    .links-buttons {
-      display: flex;
-      position: relative;
-    }
-
-    .right-frontend {
-      text-align: center;
-
-      h3 {
-        font-size: 20px;
-        text-align: center;
-        padding-top: 10px;
-      }
-
-      .frontend-description {
-        padding-left: 0;
-        text-align: center;
-        padding-top: 5px;
-      }
-
-      .frontend-software {
-        text-align: center;
-        padding-top: 25px;      
-      }
-    }
-  }
-
-  #container-todo {
-    margin-bottom: 100px;
-    display: flex;
-    flex-direction: column-reverse;
-    width: 100%;
-
-    .image-todo {
-      height: 100%;
-    }
-
-    .links-buttons {
-      position: relative;
-      display: flex;
-    }
-
-    h3 {
-      font-size: 20px;
-      text-align: center;
-      color: $accent-color;
-      padding-top: 10px
-    }
-
-    .todo-description {
-      padding-right: 0;
-      padding-top: 5px;
-    }
-
-    .todo-software {
-      padding-top: 25px;
+    p {
+      text-align: left;
     }
   }
 }  
@@ -567,170 +251,6 @@ $accent-color: #038AFF;
 
   p {
     font-size: 22px;
-  }
-
-
-  #container-3d {
-    display: block;
-    width: 100%;
-    margin-bottom: 500px;
-
-
-    .image-3d {
-      text-align: center;
-      height: 100%;
-    }
-
-    .links-buttons {
-      display: flex;
-      position: relative;
-      justify-content: center;
-      width: 100%;
-    }
-
-    .right-3d {
-      text-align: center;
-
-      h3 {
-        text-align: center;
-        padding-top: 10px;
-        width: 100%;
-      }
-
-      .portfolio3d-description {
-        padding-left: 0;
-        text-align: center;
-        padding-top: 5px;
-        width: 90%;
-        margin: 0 auto;
-      }
-
-      .portfolio3d-software {
-        text-align: center;
-        width: 100%;
-        padding: 25px 0 10px 0;
-      }
-    }
-  }
-
-  #container-weather {
-    flex-flow: column-reverse;
-    width: 100%;
-    margin-bottom: 100px;
-
-    .image-weather {
-      text-align: center;
-      height: 100%;
-    }
-
-    h3 {
-      font-size: 20px;
-      text-align: center;
-      padding-top: 10px;
-    }
-
-    .links-buttons {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
-
-    .weather-description {
-      text-align: center;
-      width: 90%;
-      margin: 0 auto;
-      padding-right: 0;
-      padding-top: 5px;
-    }
-
-    .weather-software {
-      text-align: center;
-      padding-top: 25px;
-      width: 100%;
-    }
-  }
-
-  #container-frontend {
-    display: block;
-    margin-bottom: 500px;
-    width: 100%;
-
-    .image-frontend {
-      text-align: center;
-      height: 100%;
-    }
-
-    .links-buttons {
-      display: flex;
-      position: relative;
-      justify-content: center;
-      width: 100%;
-    }
-
-    .right-frontend {
-      text-align: center;
-
-      h3 {
-        font-size: 20px;
-        text-align: center;
-        padding-top: 10px;
-      }
-
-      .frontend-description {
-        padding-left: 0;
-        text-align: center;
-        padding-top: 5px;
-        width: 90%;
-        margin: 0 auto;
-      }
-
-      .frontend-software {
-        text-align: center;
-        padding-top: 25px;      
-      }
-    }
-  }
-
-  #container-todo {
-    margin-bottom: 100px;
-    display: flex;
-    flex-direction: column-reverse;
-    width: 100%;
-
-    .image-todo {
-      text-align: center;
-      height: 100%;
-    }
-
-    .links-buttons {
-      width: 100%;
-      text-align: center;
-      align-items: center;
-      position: relative;
-      display: flex;
-      justify-content: center;
-    }
-
-    h3 {
-      font-size: 20px;
-      text-align: center;
-      color: $accent-color;
-      padding-top: 10px
-    }
-
-    .todo-description {
-      padding-right: 0;
-      padding-top: 5px;
-      width: 90%;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .todo-software {
-      padding-top: 25px;
-      text-align: center;
-    }
   }
 }  
 }

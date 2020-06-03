@@ -30,18 +30,13 @@ $background-color: #f7f7f7;
 $text-color: #333;
 $accent-color: #038AFF;
 
-:target {
-  padding-top: 275px;
-  margin-top: -275px;
-  display: inline-block;
-}
 
 #about-container {
   padding-top: 200px;
   max-width: 1050px;
   margin: 0 auto;
-  font-family: 'Calibre', sans-serif;
-  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
   font-weight: 500;
   color: $text-color;
 
@@ -53,11 +48,11 @@ $accent-color: #038AFF;
 
     h2 {
       font-size: 2rem;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
       color: $text-color;
       position: relative;
       padding-bottom: 0.4rem;
-      font-family: 'SF', sans-serif;
+      font-family: 'Inter', sans-serif;
 
       &:after {
         content: "";
@@ -79,7 +74,7 @@ $accent-color: #038AFF;
       columns: 2;
       width: 550px;
       list-style: none;
-      font-size: 18px;
+      font-size: 16px;
 
 
       i {
@@ -91,11 +86,6 @@ $accent-color: #038AFF;
 }
 
 @media screen and (max-width: 700px){
-:target {
-  padding-top: 0;
-  margin-top: -0;
-  display: inline-block;
-}
 
  #about-container {
   padding-top: 50px;

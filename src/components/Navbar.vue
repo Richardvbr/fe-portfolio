@@ -1,12 +1,12 @@
 <template>
   <nav id="nav-container">
     <div class="logo">
-      <a href="#home"><img src="../../public/android-chrome-192x192.png" alt="Logo"></a>
+      <a v-scroll-to="'#home-container'"><img src="../../public/android-chrome-192x192.png" alt="Logo"></a>
     </div>
     <ul>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href=#about>About</a></li>
-      <li><a href=#contact>Contact</a></li>
+      <li><a v-scroll-to="'#projects-container'">Projects</a></li>
+      <li><a v-scroll-to="'#about-container'">About</a></li>
+      <li><a v-scroll-to="'#contact-container'">Contact</a></li>
       <li><a href='/resume_RichardvanBrunschot.pdf' target="blank" class="resume-link">Resume</a></li>
     </ul>
   </nav>
@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'Navbar'
+  name: 'Navbar',
 }
 </script>
 
@@ -57,8 +57,8 @@ $accent-color: #038AFF;
     li a {
       text-decoration: none;
       color: $text-color;
-      font-family: 'SF', sans-serif;
-      font-weight: bold;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
       padding: 0.5rem 1.5rem;
       transition: 0.25s ease;
     
@@ -88,8 +88,8 @@ $accent-color: #038AFF;
   padding: 0 2rem;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  height: 6rem;
+  flex-direction: row;
+  height: 4.25rem;
 
   .logo img {
     max-width: 35px;
@@ -98,7 +98,7 @@ $accent-color: #038AFF;
 
   ul {
     display: flex;
-    padding: 0 0 1rem 0;
+    padding: 0;
     li a {
       padding: 0.5rem 1rem;
     }

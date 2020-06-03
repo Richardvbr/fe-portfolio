@@ -4,7 +4,7 @@
       <h1 id="home">I create responsive and easy-to-use <br class="hide-laptop"> websites.</h1>
       <p>My name is <span>Richard van Brunschot</span> and I'm a <span>Front-end Developer</span>,<br>
 based in Veldhoven, The Netherlands.</p>
-      <a href="#projects" class="button-link">See My Work <i class="fas fa-chevron-down"></i></a>
+      <a v-scroll-to="'#projects-container'" class="button-link">See My Work <i class="fas fa-chevron-down"></i></a>
       <img src="../assets/hero_landing.png" alt="Hero-landing">
     </div>
   </div>
@@ -12,7 +12,7 @@ based in Veldhoven, The Netherlands.</p>
 
 <script>
 export default {
-  name: 'Home'
+  name: 'Home',
 }
 </script>
 
@@ -22,11 +22,6 @@ $background-color: #f7f7f7;
 $text-color: #333;
 $accent-color: #038AFF;
 
-:target {
-  padding-top: 300px;
-  margin-top: -300px;
-  display: inline-block;
-}
 
 // Default
 #home-container {
@@ -42,26 +37,29 @@ $accent-color: #038AFF;
   height: 100%;
   position: relative;
 
+  .hide-laptop {
+    display: none;
+  }
+
     h1 {
-      color: $text-color;
+      color: #333;
       width: 100%;
-      font-family: 'SF', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-weight: bold;
-      font-size: 3.75rem;
+      font-size: 4.05rem;
       position: relative;
+      max-width: 20ch;
+      line-height: 1;
     }
 
     p {
-      color: $text-color;
+      color: #555;
       width: 100%;
-      font-family: 'Calibre', sans-serif;
-      font-size: 1.5rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.25rem;
       margin-top: 5rem;
       font-weight: 500;
-
-      span:nth-child(2) {
-        // color: $accent-color;
-      }
+      line-height: 1.4;
     }
 
     .button-link {
@@ -71,7 +69,7 @@ $accent-color: #038AFF;
       color: $background-color;
       padding: 1rem 2rem;
       cursor: pointer;
-      font-family: 'SF', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-weight: bold;
       font-size: 1rem;
       margin-top: 5rem;
@@ -135,10 +133,11 @@ $accent-color: #038AFF;
 
       h1 {
         font-size: 2.5rem;
+        line-height: 1;
       }
 
       p {
-        font-size: 1.35rem;
+        font-size: 1.2rem;
         margin-top: 5rem;
       }
 

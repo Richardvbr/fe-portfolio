@@ -20,7 +20,7 @@ $text-color: #333;
   height: 3rem;
 
   .footer {
-    font-family: 'Calibre', sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: #fff;
     height: 100%;
     font-size: 15px;
@@ -29,6 +29,7 @@ $text-color: #333;
     justify-content: center;
     align-items: center;
     padding-top: 7px;
+    font-weight: 500;
 
     a {
       color: rgb(90, 90, 90);

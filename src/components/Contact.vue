@@ -47,30 +47,24 @@ $text-color: #333;
 $accent-color: #038AFF;
 $border-color: #b4b4b4;
 
-:target {
-  padding-top: 200px;
-  margin-top: -200px;
-  display: inline-block;
-}
-
 #contact-container {
   padding: 300px 0;
   max-width: 1050px;
   // height: 100vh;
   position: relative;
   margin: 0 auto;
-  font-family: 'Calibre', sans-serif;
-  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
   font-weight: 500;
   color: $text-color;
 
   h2 {
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     color: $text-color;
     position: relative;
     padding-bottom: 0.4rem;
-    font-family: 'SF', sans-serif;
+    font-family: 'Inter', sans-serif;
 
     &:after {
       content: "";
@@ -89,11 +83,12 @@ $border-color: #b4b4b4;
     flex-direction: row;
 
     .left {
-      max-width: 375px;
+      max-width: 350px;
       padding-top: 20px;
+      margin-right: 50px;
 
       h3 {
-        font-family: 'SF', sans-serif;
+        font-family: 'Inter', sans-serif;
         color: $accent-color;
         padding-top: 30px;
         font-size: 20px;
@@ -114,7 +109,7 @@ $border-color: #b4b4b4;
         cursor: pointer;
         font-weight: bold;
         font-size: 1rem;
-        font-family: 'SF', sans-serif;
+        font-family: 'Inter', sans-serif;
         transition: 0.25s ease;
         margin-top: 27px;
 
@@ -142,19 +137,19 @@ $border-color: #b4b4b4;
     .submit-button {
       button {
       width: 50%;
-      padding: 0.5rem 3rem;
-      padding-top: 15px;
+      padding: 0.75rem 3rem;
       font-size: 20px;
       background: none;
       border: 2px solid $accent-color;
       border-radius: 13px;
-      font-family: 'Calibre', sans-serif;
+      font-family: 'Inter', sans-serif;
       text-align: center;
       cursor: pointer;
       color: $accent-color;
       transition: 0.25s ease;
       margin-left: 25%;
       margin-top: 25px;
+      font-weight: 600;
 
         &:hover {
           background-color: $accent-color;
@@ -165,6 +160,7 @@ $border-color: #b4b4b4;
 
     label {
       display: block;
+      font-size: 15px;
     }
 
     input {
@@ -172,7 +168,7 @@ $border-color: #b4b4b4;
       border: 1px solid $border-color;
       border-radius: 3px;
       padding: 0.5rem;
-      font-family: 'Calibre', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 20px;
 
       &:focus {
@@ -182,7 +178,7 @@ $border-color: #b4b4b4;
     }
 
     textarea {
-      font-family: 'Calibre', sans-serif;
+      font-family: 'Inter', sans-serif;
       background: none;
       resize: none;
       width: 100%;
@@ -204,11 +200,6 @@ $border-color: #b4b4b4;
 
 // Smartphone
 @media screen and (max-width: 700px) {
-:target {
-  padding-top: 0;
-  margin-top: -0;
-  display: inline-block;
-}
 
  #contact-container {
   padding: 100px 2rem 5rem 2rem;
@@ -227,7 +218,7 @@ $border-color: #b4b4b4;
       padding-top: 20px;
 
       h3 {
-        font-family: 'SF', sans-serif;
+        font-family: 'Inter', sans-serif;
         color: $accent-color;
         padding-top: 30px;
         font-size: 20px;
@@ -277,7 +268,7 @@ $border-color: #b4b4b4;
       padding-top: 20px;
 
       h3 {
-        font-family: 'SF', sans-serif;
+        font-family: 'Inter', sans-serif;
         color: $accent-color;
         padding-top: 30px;
         font-size: 20px;

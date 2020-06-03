@@ -32,32 +32,84 @@ export default {
 
 <style lang="scss">
 @font-face {
-  font-family: 'SF';
-  src: url('../src/assets/SF-UI-Display-Bold.otf') format('otf');
-  font-weight: 800;
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("../src/assets/Inter-Thin.woff2?v=3.13") format("woff2"),
+       url("../src/assets/Inter-Thin.woff?v=3.13") format("woff");
 }
 
 @font-face {
-  font-family: 'SF';
-  src: url('../src/assets/SF-UI-Display-Medium.otf') format('otf');
-  font-weight: 600;
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("../src/assets/Inter-ExtraLight.woff2?v=3.13") format("woff2"),
+       url("../src/assets/Inter-ExtraLight.woff?v=3.13") format("woff");
 }
 
 @font-face {
-  font-family: 'Calibre';
-  src: url('../src/assets/CalibreRegular.woff') format('woff');
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../src/assets/Inter-Light.woff2?v=3.13") format("woff2"),
+       url("../src/assets/Inter-Light.woff?v=3.13") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../src/assets/Inter-Regular.woff2?v=3.13") format("woff2"),
+       url("../src/assets/Inter-Regular.woff?v=3.13") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
   font-weight: 500;
+  font-display: swap;
+  src: url("../src/assets/Inter-Medium.woff2?v=3.13") format("woff2"),
+       url("../src/assets/Inter-Medium.woff?v=3.13") format("woff");
 }
 
 @font-face {
-  font-family: 'Calibre';
-  src: url('../src/assets/CalibreBold.woff') format('woff');
-  font-weight: 700;
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../src/assets/Inter-SemiBold.woff2?v=3.13") format("woff2"),
+       url("../src/assets/Inter-SemiBold.woff?v=3.13") format("woff");
 }
 
-html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../src/assets/Inter-Bold.woff2?v=3.13") format("woff2"),
+       url("../src/assets/Inter-Bold.woff?v=3.13") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../src/assets/Inter-ExtraBold.woff2?v=3.13") format("woff2"),
+       url("../src/assets/Inter-ExtraBold.woff?v=3.13") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../src/assets/Inter-Black.woff2?v=3.13") format("woff2"),
+       url("../src/assets/Inter-Black.woff?v=3.13") format("woff");
 }
 
 * {
@@ -68,5 +120,15 @@ html {
   body {
     background-color: #f7f7f7;
   }
+}
+
+a {
+  cursor: pointer;
+}
+
+p {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.4;
 }
 </style>

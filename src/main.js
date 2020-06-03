@@ -3,6 +3,11 @@ import App from './App.vue'
 import AOS from "aos";
 import "aos/dist/aos.css"
 
+
+const VueScrollTo = require('vue-scrollto')
+Vue.use(VueScrollTo)
+
+
 Vue.config.productionTip = false
 
 new Vue({
