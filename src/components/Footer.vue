@@ -28,13 +28,18 @@ $text-color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 7px;
     font-weight: 500;
 
     a {
       color: rgb(90, 90, 90);
       text-decoration: none;
     }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container .footer a {
+    font-size: 13px;
   }
 }
 </style>

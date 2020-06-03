@@ -5,7 +5,7 @@
       <!-- Loop over JSON object containing all project data and render a card for each entry -->
       <div class="grid-item" v-for="(project, portfolioLoop) in portfolioJSON" :key="portfolioLoop">
         <div>
-          <a :href="project.url"><img :src="project.img" :alt="project.imgAlt" /></a>
+          <a :href="project.url" target="blank"><img :src="project.img" :alt="project.imgAlt"></a>
         </div>
         <div>
           <h3>{{ project.title }}</h3>
@@ -17,8 +17,8 @@
           <p>{{ project.description }}</p>
         </div>
         <div class="flex-icons">
-          <div class="item1"><a :href="project.github"><i class="fab fa-github"></i></a></div>
-          <div class="item2"><a :href="project.url"><i class="fas fa-external-link-alt"></i></a></div>
+          <div class="item1"><a :href="project.github" target="blank"><i class="fab fa-github"></i></a></div>
+          <div class="item2"><a :href="project.url" target="blank"><i class="fas fa-external-link-alt"></i></a></div>
         </div>
       </div>
     </div>
@@ -148,6 +148,8 @@ $accent-color: #038AFF;
 
       p {
         padding: 0 1.5rem;
+        color: #555;
+        line-height: 1.5;
       }
 
       .flex-icons {
@@ -212,6 +214,10 @@ $accent-color: #038AFF;
     p {
       text-align: left;
     }
+
+    .grid-item {
+      box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.1);
+    }
   }
 }  
 }
@@ -227,17 +233,6 @@ $accent-color: #038AFF;
     scroll-margin-top: 50px;
   }
 
-
-  img {
-    width: 100%;
-    line-height: 0;
-
-    &:hover {
-      transform: none;
-      box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.1);
-    } 
-  }
-
   h2 {
     padding-top: 5rem;
     font-size: 3rem;
@@ -250,7 +245,7 @@ $accent-color: #038AFF;
   }
 
   p {
-    font-size: 22px;
+    font-size: 18px;
   }
 }  
 }

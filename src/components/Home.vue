@@ -162,18 +162,19 @@ $accent-color: #038AFF;
       padding-top: 15rem;
 
       h1 {
-        font-size: 5rem;
+        font-size: 3.5rem;
       }
 
       p {
-        font-size: 2rem;
+        font-size: 1.25rem;
         margin-top: 5rem;
       }
 
       .button-link {
         margin-top: 3.5rem;
-        font-size: 1.5rem;
-        width: 250px;
+        font-size: 1.25rem;
+        width: 200px;
+        padding: 1rem;
       }
     }
 

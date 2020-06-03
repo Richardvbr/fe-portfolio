@@ -27,7 +27,7 @@ export default {
 <style scoped lang="scss">
 // Variables
 $background-color: #f7f7f7;
-$text-color: #333;
+$text-color: #555;
 $accent-color: #038AFF;
 
 
@@ -49,7 +49,7 @@ $accent-color: #038AFF;
     h2 {
       font-size: 2rem;
       margin-bottom: 3rem;
-      color: $text-color;
+      color: #333;
       position: relative;
       padding-bottom: 0.4rem;
       font-family: 'Inter', sans-serif;
@@ -88,13 +88,10 @@ $accent-color: #038AFF;
 @media screen and (max-width: 700px){
 
  #about-container {
-  padding-top: 50px;
+  margin-top: 5rem;
   max-width: 100vw;
   padding: 0 2rem;
 
-  #about {
-    scroll-margin-top: 125px;
-  }
 
   .flex-container {
     display: flex;
@@ -109,6 +106,7 @@ $accent-color: #038AFF;
 
     ul {
       width: 100%;
+      font-size: 15px;
 
       i {
         padding: 10px 10px 0 0;
@@ -123,6 +121,7 @@ $accent-color: #038AFF;
   max-width: 100vw;
   padding: 0 2rem;
   font-size: 22px;
+  margin-top: 5rem;
 
   #about {
     scroll-margin-top: -60px;

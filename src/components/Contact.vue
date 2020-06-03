@@ -43,7 +43,7 @@ export default {
 <style scoped lang="scss">
 // Variables
 $background-color: #f7f7f7;
-$text-color: #333;
+$text-color: #555;
 $accent-color: #038AFF;
 $border-color: #b4b4b4;
 
@@ -61,7 +61,7 @@ $border-color: #b4b4b4;
   h2 {
     font-size: 2rem;
     margin-bottom: 3rem;
-    color: $text-color;
+    color: #333;
     position: relative;
     padding-bottom: 0.4rem;
     font-family: 'Inter', sans-serif;
@@ -237,8 +237,8 @@ $border-color: #b4b4b4;
 
     .submit-button {
       button {
-      margin-left: 0;
-      margin: 15px 0;
+        width: 60%;
+        margin: 15px 0;
       }
     }
 
