@@ -1,5 +1,5 @@
 <template>
-  <div id="about-container" data-aos="fade-up" data-aos-delay="0" data-aos-anchor-placement="top-center">
+  <section id="about-container" data-aos="fade-up" data-aos-delay="0" data-aos-anchor-placement="top-center">
     <div class="flex-container">
       <h2 id="about">About Me</h2>
       <p class="description">
@@ -15,7 +15,7 @@
         <li><i class="fas fa-caret-right"></i>AdobeXD</li>
       </ul>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

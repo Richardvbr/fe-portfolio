@@ -1,9 +1,9 @@
 <template>
-  <div class="container">
+  <footer class="container">
     <div class="footer">
       <a href="https://github.com/Richardvbr" target="_blank">Design &amp; Code by Richard van Brunschot</a>
     </div>
-  </div>
+  </footer>
 </template>
 
 <script>

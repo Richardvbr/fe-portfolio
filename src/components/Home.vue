@@ -1,5 +1,5 @@
 <template>
-  <div id="home-container">
+  <section id="home-container">
     <div id="home-content">
       <h1 id="home">I create responsive and easy-to-use <br class="hide-laptop"> websites.</h1>
       <p>My name is <span>Richard van Brunschot</span> and I'm a <span>Front-end Developer</span>,<br>
@@ -7,7 +7,7 @@ based in Veldhoven, The Netherlands.</p>
       <a v-scroll-to="'#projects-container'" class="button-link">See My Work <i class="fas fa-chevron-down"></i></a>
       <img src="../assets/hero_landing.png" alt="Hero-landing">
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
