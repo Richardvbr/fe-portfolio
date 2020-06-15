@@ -3,7 +3,7 @@
     <div class="flex-container">
       <h2 id="about">About Me</h2>
       <p class="description">
-        Hi, my name is Richard and I'm a front-end developer based in Veldhoven, The Netherlands. <br> <br> I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build responsive products that provide performant experiences and are easy to use. <br> <br>
+        Hi, my name is Richard and I'm a front-end developer based in Veldhoven, The Netherlands. <br> <br> I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. I aim to build responsive products that provide performant experiences and are easy to use. <br> <br>
         Here are a few technologies I've been working with recently:
       </p>
       <ul class="software">
