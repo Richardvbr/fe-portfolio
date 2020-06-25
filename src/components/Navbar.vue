@@ -7,7 +7,6 @@
       <li><a v-scroll-to="'#projects-container'">Projects</a></li>
       <li><a v-scroll-to="'#about-container'">About</a></li>
       <li><a v-scroll-to="'#contact-container'">Contact</a></li>
-      <li><a href='/resume_RichardvanBrunschot.pdf' target="blank" class="resume-link">Resume</a></li>
     </ul>
   </nav>
 </template>
