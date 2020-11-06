@@ -8,8 +8,7 @@
       </p>
       <ul class="software">
         <li><i class="fas fa-caret-right"></i>JavaScript (ES6+)</li>
-        <li><i class="fas fa-caret-right"></i>Vue.js</li>
-        <li><i class="fas fa-caret-right"></i>Vue Router</li>
+        <li><i class="fas fa-caret-right"></i>Vue.js (SPA)</li>
         <li><i class="fas fa-caret-right"></i>PHP</li>
         <li><i class="fas fa-caret-right"></i>WordPress</li>
         <li><i class="fas fa-caret-right"></i>HTML5</li>
