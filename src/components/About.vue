@@ -10,6 +10,8 @@
         <li><i class="fas fa-caret-right"></i>JavaScript (ES6+)</li>
         <li><i class="fas fa-caret-right"></i>Vue.js</li>
         <li><i class="fas fa-caret-right"></i>Vue Router</li>
+        <li><i class="fas fa-caret-right"></i>PHP</li>
+        <li><i class="fas fa-caret-right"></i>Wordpress</li>
         <li><i class="fas fa-caret-right"></i>HTML5</li>
         <li><i class="fas fa-caret-right"></i>(S)CSS</li>
         <li><i class="fas fa-caret-right"></i>AdobeXD</li>
