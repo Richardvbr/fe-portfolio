@@ -27,13 +27,13 @@ $accent-color: #038AFF;
   background-color: #fff;
   width: 100vw;
   height: 4.5rem;
-  box-shadow: 0px 10px 15px 1px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 15px 1px rgba(0,0,0,0.13);
   position: fixed;
   top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5rem;
+  padding: 0 10rem;
   z-index: 1;
 
   .logo img {
@@ -41,10 +41,6 @@ $accent-color: #038AFF;
     transition: 0.2s ease;
     // Hide jagged edges
     outline: 1px solid transparent;
-
-    &:hover {
-      transform: scale(1.1) rotate(-15deg);
-    }
   }
 
   ul {

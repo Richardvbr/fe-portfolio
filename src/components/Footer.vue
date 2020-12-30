@@ -23,7 +23,7 @@ $text-color: #333;
     font-family: 'Inter', sans-serif;
     background-color: #fff;
     height: 100%;
-    font-size: 15px;
+    font-size: 13px;
     box-shadow: 0px -10px 15px 1px rgba(0,0,0,0.1);
     display: flex;
     justify-content: center;

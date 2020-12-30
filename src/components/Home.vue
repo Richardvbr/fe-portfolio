@@ -4,7 +4,7 @@
       <h1 id="home">I create responsive and easy-to-use <br class="hide-laptop"> websites.</h1>
       <p>My name is <span>Richard van Brunschot</span> and I'm a <span>Front-end Developer</span>,<br>
 based in Veldhoven, The Netherlands.</p>
-      <a v-scroll-to="'#projects-container'" class="button-link">See My Work <i class="fas fa-chevron-down"></i></a>
+      <a v-scroll-to="'#projects-container'" class="button-link">View projects<i class="fas fa-chevron-down"></i></a>
       <img src="../assets/hero_landing.png" alt="Hero-landing">
     </div>
   </section>
@@ -42,7 +42,7 @@ $accent-color: #038AFF;
   }
 
     h1 {
-      color: #333;
+      color: #111;
       width: 100%;
       font-family: 'Inter', sans-serif;
       font-weight: bold;
@@ -53,11 +53,11 @@ $accent-color: #038AFF;
     }
 
     p {
-      color: #555;
+      color: #333;
       width: 100%;
       font-family: 'Inter', sans-serif;
       font-size: 1.25rem;
-      margin-top: 5rem;
+      margin-top: 3rem;
       font-weight: 500;
       line-height: 1.4;
     }
