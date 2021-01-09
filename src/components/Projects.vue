@@ -55,7 +55,7 @@ export default {
           url: 'https://richardvbr-vue3-todo.netlify.app/',
           title: 'Vue 3 To-do App',
           software: ['Vue 3', 'JavaScript', 'HTML5', 'SCSS'],
-          description: "Another to-do application, made with Vue 3 to try out the new composition API. Stores to-do items in the browser's localStorage. Easily check/uncheck items. Also created a version with vanilla JavaScript to see how it differs from using a framework.",
+          description: "A to-do application, made with Vue 3 to try out the new composition API. Stores to-do items in the browser's localStorage. Easily check/uncheck items. Also created a version with vanilla JavaScript to see how it differs from using a framework.",
           github: 'https://github.com/Richardvbr/Vue-3-To-do-Application'
         },
         {
