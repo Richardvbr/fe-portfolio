@@ -50,6 +50,15 @@ export default {
           github: 'https://github.com/Richardvbr/Todaysweather'
         },
         {
+          img: require("../assets/hero_vue_todo.jpg"),
+          imgAlt: 'Vue 3 To-do App',
+          url: 'https://richardvbr-vue3-todo.netlify.app/',
+          title: 'Vue 3 To-do App',
+          software: ['Vue 3', 'JavaScript', 'HTML5', 'SCSS'],
+          description: "Another to-do application, made with Vue 3 to try out the new composition API. Stores to-do items in the browser's localStorage. Easily check/uncheck items. Also created a version with vanilla JavaScript to see how it differs from using a framework.",
+          github: 'https://github.com/Richardvbr/Vue-3-To-do-Application'
+        },
+        {
           img: require("../assets/hero_fe.jpg"),
           imgAlt: 'Front-end Portfolio',
           url: 'https://www.brunschot.dev/',
@@ -64,7 +73,7 @@ export default {
           url: 'https://richardvbr-todoapp.netlify.app/',
           title: 'To-do App',
           software: ['JavaScript', 'HTML5', 'CSS'],
-          description: "To-do application that utilizes the browser's Local Storage to remember your to-do lists. Shows current date and prevents empty inputs.",
+          description: "To-do application that uses the browser's localStorage to store to-do items. Shows current date and prevents empty inputs.",
           github: 'https://github.com/Richardvbr/Todo-app'
         }
       ]
