@@ -8,7 +8,7 @@
         <a href="mailto:richardvanbrunschot@gmail.com">Richardvanbrunschot@gmail.com</a>
         <div class="link-buttons">
           <a href="https://www.linkedin.com/in/rbrunschot/" target=”_blank” rel=”noreferrer“><button class="button-link">LinkedIn <i class="fas fa-external-link-alt"></i></button></a>
-          <a href="https://github.com/Richardvbr" target="blank"><button class="button-link">GitHub <i class="fas fa-external-link-alt"></i></button></a>
+          <a href="https://github.com/Richardvbr" target="_blank"><button class="button-link">GitHub <i class="fas fa-external-link-alt"></i></button></a>
         </div>
       </div>
       <div class="right">

@@ -5,20 +5,23 @@
       <!-- Loop over JSON object containing all project data and render a card for each entry -->
       <div class="grid-item" v-for="(project, portfolioLoop) in portfolioJSON" :key="portfolioLoop">
         <div>
-          <a :href="project.url" target="blank"><img :src="project.img" :alt="project.imgAlt"></a>
+          <a :href="project.url" target="_blank"><img :src="project.img" :alt="project.imgAlt"></a>
         </div>
         <div>
           <h3>{{ project.title }}</h3>
         </div>
+        <!-- Loop over software, creating a tag for each entry (nested loop) -->
         <div class="software">
-          <p>{{ project.software.join(', ') }}</p>
+          <p v-for="(software, softwareLoop) in project.software" :key="softwareLoop">
+           {{ software }}
+          </p>
         </div>
         <div>
           <p>{{ project.description }}</p>
         </div>
         <div class="flex-icons">
-          <div class="item1"><a :href="project.github" target="blank"><i class="fab fa-github"></i></a></div>
-          <div class="item2"><a :href="project.url" target="blank"><i class="fas fa-external-link-alt"></i></a></div>
+          <div class="item1"><a :href="project.github" target="_blank"><i class="fab fa-github"></i></a></div>
+          <div class="item2"><a :href="project.url" target="_blank"><i class="fas fa-external-link-alt"></i></a></div>
         </div>
       </div>
     </div>
@@ -36,7 +39,7 @@ export default {
           imgAlt: '3D Modeling Portfolio',
           url: 'https://richardvbr-3d-vue.netlify.app/',
           title: '3D Modeling Portfolio',
-          software: ['Vue.js', 'Vue Router', 'HTML5', 'SCSS', 'AdobeXD'],
+          software: ['Vue.js', 'HTML5', 'SCSS', 'AdobeXD'],
           description: "Portfolio website to showcase 3D models. Component-based Vue.js single-page application to provide a performant and modern experience. New portfolio items are added to the grid automatically using JSON and for-loops.",
           github: 'https://github.com/Richardvbr/3d-portfolio-vue'
         },
@@ -87,6 +90,7 @@ export default {
 $background-color: #f7f7f7;
 $text-color: #333;
 $accent-color: #038AFF;
+$softwareBGColor: #d6ecff;
 
 #projects-container {
   max-width: 1050px;
@@ -132,7 +136,7 @@ $accent-color: #038AFF;
       transition: 0.2s ease;
 
       &:hover {
-        transform: translateY(-3px);
+        box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.4);
       }
 
       img {
@@ -148,10 +152,16 @@ $accent-color: #038AFF;
       }
 
       .software {
+        display: flex;
+        padding: 0 1.5rem;
+
         p {
-          padding: 0 1.5rem;
-          margin-bottom: 3rem;
-          font-size: 0.9rem;
+          margin: 0.5rem 0.5rem 0.5rem 0;
+          padding: 0.3rem;
+          border-radius: 5px;
+          margin-bottom: 2rem;
+          font-size: 12px;
+          background-color: $softwareBGColor;
         }
       }
 
