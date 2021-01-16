@@ -3,7 +3,7 @@
     <Navbar></Navbar>
     <Home></Home>
     <Projects></Projects>
-    <About></About>
+    <Skillset></Skillset>
     <Contact></Contact>
     <Footer></Footer>
   </div>
@@ -13,7 +13,7 @@
 import Navbar from './components/Navbar.vue'
 import Home from './components/Home.vue'
 import Projects from './components/Projects.vue'
-import About from './components/About.vue'
+import Skillset from './components/Skillset.vue'
 import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
 
@@ -23,7 +23,7 @@ export default {
     Navbar,
     Home,
     Projects,
-    About,
+    Skillset,
     Contact,
     Footer
   }

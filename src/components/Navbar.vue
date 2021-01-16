@@ -5,7 +5,7 @@
     </div>
     <ul>
       <li><a v-scroll-to="'#projects-container'">Projects</a></li>
-      <li><a v-scroll-to="'#about-container'">About</a></li>
+      <li><a v-scroll-to="'#skillset-container'">Skills</a></li>
       <li><a v-scroll-to="'#contact-container'">Contact</a></li>
     </ul>
   </nav>
@@ -59,6 +59,18 @@ $accent-color: #038AFF;
     
       &:hover {
         color: $accent-color;
+      }
+    }
+
+    // Dark/light
+    .theme-switch-wrapper {
+      display: flex;
+      align-items: center;
+
+      p {
+        margin-left: 10px;
+        font-size: 0.75rem;
+        font-family: inter, sans-serif;
       }
     }
   }

@@ -1,9 +1,8 @@
 <template>
   <section id="home-container">
     <div id="home-content">
-      <h1 id="home">I create responsive and easy-to-use <br class="hide-laptop"> websites.</h1>
-      <p>My name is <span>Richard van Brunschot</span> and I'm a <span>Front-end Developer</span>,<br>
-based in Veldhoven, The Netherlands.</p>
+      <h1 id="home">I'm <span>Richard van Brunschot</span> <br class="hide-laptop"></h1>
+      <p>I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. I aim to build responsive websites and web apps that are easy to use</p>
       <a v-scroll-to="'#projects-container'" class="button-link">View projects<i class="fas fa-chevron-down"></i></a>
       <img src="../assets/hero_landing.png" alt="Hero-landing">
     </div>
@@ -45,21 +44,26 @@ $accent-color: #038AFF;
       color: #111;
       width: 100%;
       font-family: 'Inter', sans-serif;
-      font-weight: bold;
-      font-size: 4.05rem;
+      font-size: 3rem;
       position: relative;
       max-width: 20ch;
       line-height: 1;
+      font-weight: 400;
+    }
+
+    span {
+      color: $accent-color;
+      font-weight: bold;
     }
 
     p {
       color: #333;
-      width: 100%;
+      width: 45ch;
       font-family: 'Inter', sans-serif;
-      font-size: 1.25rem;
-      margin-top: 3rem;
+      font-size: 17px;
+      margin-top: 1.75rem;
       font-weight: 500;
-      line-height: 1.4;
+      line-height: 1.5;
     }
 
     .button-link {
@@ -72,7 +76,7 @@ $accent-color: #038AFF;
       font-family: 'Inter', sans-serif;
       font-weight: bold;
       font-size: 1rem;
-      margin-top: 5rem;
+      margin-top: 3rem;
       text-decoration: none;
       transition: 0.25s ease;
       width: 200px;
@@ -138,7 +142,8 @@ $accent-color: #038AFF;
 
       p {
         font-size: 1.2rem;
-        margin-top: 5rem;
+        margin-top: 2rem;
+        width: 100%;
       }
 
       .button-link {
