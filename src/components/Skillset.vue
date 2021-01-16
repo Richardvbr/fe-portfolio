@@ -16,6 +16,7 @@
           <li class="interface-list__item">Basic understanding of Tailwind CSS</li>
           <li class="interface-list__item">Familiar with SEO principles</li>
           <li class="interface-list__item">VS Code, Git, Adobe Suite, Wordpress</li>
+          <li class="interface-list__item">Unreal Engine 4, Unity</li>
         </ul>
       </div>
       <div class="card-skillset__javascript">
@@ -42,12 +43,13 @@ export default {
 // Variables
 $background-color: #f7f7f7;
 $text-color: #555;
-$accent-color: #038AFF;
+// $accent-color: #038AFF;
+$accent-color: #3da361;
 
 
 #skillset-container {
   padding-top: 200px;
-  max-width: 1050px;
+  max-width: 1150px;
   margin: 0 auto;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
@@ -80,7 +82,7 @@ $accent-color: #038AFF;
 
   .card-skillset {
     width: 75%;
-    height: 23rem;
+    height: 25rem;
     background-color: #fff;
     box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
     display: flex;
@@ -118,13 +120,13 @@ $accent-color: #038AFF;
 
     .card-skillset {
       width: 100%;
-      height: 41rem;
+      height: 48rem;
       display: flex;
       flex-direction: column;
       padding: 1.5rem 2rem 1.5rem 2rem;
 
       &__interface {
-        width: 25ch;
+        width: 100%;
       }
 
       h3 {
@@ -162,7 +164,7 @@ $accent-color: #038AFF;
 
     .card-skillset {
       width: 100%;
-      height: 28rem;
+      height: 30rem;
       display: flex;
       padding: 1.5rem 2rem 1.5rem 2rem;
 

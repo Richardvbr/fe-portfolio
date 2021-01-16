@@ -15,6 +15,7 @@ export default {
 <style scoped lang="scss">
 // Variables
 $text-color: #333;
+$accent-color: #3da361;
 
 .container {
   height: 3rem;
@@ -33,6 +34,11 @@ $text-color: #333;
     a {
       color: rgb(90, 90, 90);
       text-decoration: none;
+      transition: .2s ease;
+
+      &:hover {
+        color: $accent-color;
+      }
     }
   }
 }

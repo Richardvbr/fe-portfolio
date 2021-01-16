@@ -1,7 +1,7 @@
 <template>
-  <section id="projects-container">
+  <section id="projects-container" data-aos="fade-up" data-aos-delay="0">
     <h2 id="projects">Projects</h2>
-    <div class="grid-container" data-aos="fade-up" data-aos-delay="0">
+    <div class="grid-container" >
       <!-- Loop over JSON object containing all project data and render a card for each entry -->
       <div class="grid-item" v-for="(project, portfolioLoop) in portfolioJSON" :key="portfolioLoop">
         <div>
@@ -89,11 +89,11 @@ export default {
 // Variables
 $background-color: #f7f7f7;
 $text-color: #333;
-$accent-color: #038AFF;
-$softwareBGColor: #d6ecff;
+$accent-color: #3da361;
+$softwareBGColor: #b0e4c2;
 
 #projects-container {
-  max-width: 1050px;
+  max-width: 1150px;
   position: relative;
   margin: 0 auto;
   font-family: 'Inter', sans-serif;
@@ -124,12 +124,12 @@ $softwareBGColor: #d6ecff;
   .grid-container {
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.5rem;
 
     .grid-item {
       width: 100%;
-      height: 40rem;
+      height: 37.5rem;
       background-color: #fff;
       box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
       position: relative;
@@ -141,12 +141,13 @@ $softwareBGColor: #d6ecff;
 
       img {
         width: 100%;
+        display: block;
         clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
       }
 
       h3 {
         padding: 0 1.5rem;
-        font-size: 1.85rem;
+        font-size: 1.6rem;
         font-weight: bold;
         margin-top: 1.2rem;
       }
@@ -177,7 +178,7 @@ $softwareBGColor: #d6ecff;
         .item1 {
           position: absolute;
           bottom: 1.5rem;
-          right: 5rem;
+          right: 4.25rem;
         }
 
         .item2 {
@@ -187,7 +188,7 @@ $softwareBGColor: #d6ecff;
         }
 
         i {
-          font-size: 30px;
+          font-size: 27px;
           color: #444;
           transition: 0.2s ease;
 
@@ -254,6 +255,10 @@ $softwareBGColor: #d6ecff;
 
   #projects {
     scroll-margin-top: 50px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   h2 {

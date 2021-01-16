@@ -44,7 +44,7 @@ export default {
 // Variables
 $background-color: #f7f7f7;
 $text-color: #555;
-$accent-color: #038AFF;
+$accent-color: #3da361;
 $border-color: #b4b4b4;
 
 #contact-container {

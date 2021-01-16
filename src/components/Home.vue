@@ -19,7 +19,7 @@ export default {
 // Variables
 $background-color: #f7f7f7;
 $text-color: #333;
-$accent-color: #038AFF;
+$accent-color: #3da361;
 
 
 // Default
@@ -181,10 +181,6 @@ $accent-color: #038AFF;
         width: 200px;
         padding: 1rem;
       }
-    }
-
-    img {
-      display: none;
     }
   }
 }

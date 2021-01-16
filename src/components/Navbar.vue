@@ -7,6 +7,7 @@
       <li><a v-scroll-to="'#projects-container'">Projects</a></li>
       <li><a v-scroll-to="'#skillset-container'">Skills</a></li>
       <li><a v-scroll-to="'#contact-container'">Contact</a></li>
+      <li><a href="https://github.com/Richardvbr" target="_blank" class="github-link">GitHub</a></li>
     </ul>
   </nav>
 </template>
@@ -21,12 +22,12 @@ export default {
 // Variables
 $background-color: #f7f7f7;
 $text-color: #333;
-$accent-color: #038AFF;
+$accent-color: #3da361;
 
 #nav-container {
   background-color: #fff;
   width: 100vw;
-  height: 4.5rem;
+  height: 4rem;
   box-shadow: 0px 8px 15px 1px rgba(0,0,0,0.13);
   position: fixed;
   top: 0;
@@ -61,31 +62,9 @@ $accent-color: #038AFF;
         color: $accent-color;
       }
     }
-
-    // Dark/light
-    .theme-switch-wrapper {
-      display: flex;
-      align-items: center;
-
-      p {
-        margin-left: 10px;
-        font-size: 0.75rem;
-        font-family: inter, sans-serif;
-      }
-    }
   }
-
-    .resume-link {
+    .github-link {
       color: $accent-color;
-      border: solid 2px $accent-color;
-      border-radius: 10px;
-      padding: 0.5rem 1rem;
-      margin-left: 1rem;
-
-      &:hover {
-        color: $background-color;
-        background-color: $accent-color;
-      }
     }
 }
 
