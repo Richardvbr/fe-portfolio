@@ -90,7 +90,7 @@ export default {
 $background-color: #f7f7f7;
 $text-color: #333;
 $accent-color: #3da361;
-$softwareBGColor: #b0e4c2;
+$softwareBGColor: #c3e7cf;
 
 #projects-container {
   max-width: 1150px;

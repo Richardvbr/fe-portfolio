@@ -82,7 +82,7 @@ $accent-color: #3da361;
       width: 200px;
 
       &:hover {
-        background-color: rgb(43, 156, 255);
+        background-color: #59b479;
 
         i {
           transform: translateY(5px)
