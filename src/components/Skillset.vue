@@ -2,7 +2,7 @@
   <section id="skillset-container" data-aos="fade-up" data-aos-delay="0" data-aos-anchor-placement="top-center">
     <h2 id="skillset">Skill set</h2>
     <p class="description">
-      My name is Richard van Brunschot and I am a front-end developer that loves building responsive websites and web apps using the latest technologies.
+      My name is Richard van Brunschot and I am a front-end developer who loves building responsive websites and web apps using the latest technologies.
       <br><br>
     </p>
     <div class="card-skillset">
