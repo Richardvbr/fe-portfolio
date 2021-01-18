@@ -75,7 +75,7 @@ $accent-color: #3da361;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  height: 4.25rem;
+  height: 4rem;
 
   .logo img {
     max-width: 35px;
@@ -86,7 +86,7 @@ $accent-color: #3da361;
     display: flex;
     padding: 0;
     li a {
-      padding: 0.5rem 1rem;
+      padding: 0.5rem 0.75rem;
     }
   }
 

@@ -8,7 +8,7 @@
           <a :href="project.url" target="_blank"><img :src="project.img" :alt="project.imgAlt"></a>
         </div>
         <div>
-          <h3>{{ project.title }}</h3>
+          <a :href="project.url" target="_blank"><h3>{{ project.title }}</h3></a>
         </div>
         <!-- Loop over software, creating a tag for each entry (nested loop) -->
         <div class="software">
@@ -143,6 +143,11 @@ $softwareBGColor: #c3e7cf;
         width: 100%;
         display: block;
         clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
+      }
+
+      a {
+        color: $text-color;
+        text-decoration: none;
       }
 
       h3 {
