@@ -9,7 +9,7 @@
       <div class="card-skillset__interface">
         <h3>User interface and tools</h3>
         <ul class="interface-list">
-          <li class="interface-list__item">HTML5, CSS3, SCSS, React styled-components</li>
+          <li class="interface-list__item">HTML5, CSS3, SCSS</li>
           <li class="interface-list__item">Experience with responsive and mobile-first design</li>
           <li class="interface-list__item">Basic UX/UI skills, good eye for detail</li>
           <li class="interface-list__item">Experience with Bootstrap 5</li>
@@ -23,7 +23,7 @@
         <h3>JavaScript</h3>
         <ul class="javascript-list">
           <li class="javascript-list__item">JavaScript ES6+</li>
-          <li class="javascript-list__item">Experience with React.js and Vue.js</li>
+          <li class="javascript-list__item">Experience with Vue.js and React.js</li>
           <li class="javascript-list__item">Displaying data fetched from an API</li>
           <li class="javascript-list__item">Creating single-page applications</li>
           <li class="javascript-list__item">Familiar with npm, webpack, eslint</li>
