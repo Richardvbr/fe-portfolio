@@ -18,6 +18,8 @@
         </div>
         <div>
           <p>{{ project.description }}</p>
+          <br>
+          <p class="project-note">{{ project.note }}</p>
         </div>
         <div class="flex-icons">
           <div class="item1"><a :href="project.github" target="_blank"><i class="fab fa-github"></i></a></div>
@@ -50,16 +52,8 @@ export default {
           title: 'Weather App',
           software: ['JavaScript', 'HTML5', 'SCSS', 'AdobeXD'],
           description: "Weather application that displays local current weather information. Fetches weather data using the Dark Sky API. API calls are done on a Node/Express back-end so that the API key is hidden and secured.",
+          note: "Note: may take a moment to load due to free Node.js hosting",
           github: 'https://github.com/Richardvbr/Todaysweather'
-        },
-        {
-          img: require("../assets/hero_vue_todo.jpg"),
-          imgAlt: 'Vue 3 To-do App',
-          url: 'https://richardvbr-vue3-todo.netlify.app/',
-          title: 'Vue 3 To-do App',
-          software: ['Vue 3', 'JavaScript', 'HTML5', 'SCSS'],
-          description: "A to-do application, made with Vue 3 to try out the new composition API. Stores to-do items in the browser's localStorage. Easily check/uncheck items. Also created a version with vanilla JavaScript to see how it differs from using a framework.",
-          github: 'https://github.com/Richardvbr/Vue-3-To-do-Application'
         },
         {
           img: require("../assets/hero_fe.jpg"),
@@ -69,6 +63,24 @@ export default {
           software: ['Vue.js', 'HTML5', 'SCSS', 'AdobeXD'],
           description: "Portfolio website to showcase my work as a front-end developer. Component-based Vue.js application. New portfolio items are added to the grid automatically using JSON and for-loops. Opted for a clean design that is easy on the eyes. Responsive design and scroll-based animations.",
           github: 'https://github.com/Richardvbr/fe-portfolio'
+        },
+        {
+          img: require("../assets/hero_landing.jpg"),
+          imgAlt: 'Landing Page',
+          url: 'https://richardvbr-landing-page.netlify.app/',
+          title: 'Landing Page',
+          software: ['HTML5', 'SCSS', 'JavaScript'],
+          description: "Fully responsive landing page based on an existing design. Coded using a mobile-first approach. Reponsive navbar that toggles between the default view and a hamburger menu based on device width. Toggleable features using JavaScript.",
+          github: 'https://github.com/Richardvbr/Landing-page'
+        },
+        {
+          img: require("../assets/hero_vue_todo.jpg"),
+          imgAlt: 'Vue 3 To-do App',
+          url: 'https://richardvbr-vue3-todo.netlify.app/',
+          title: 'Vue 3 To-do App',
+          software: ['Vue 3', 'JavaScript', 'HTML5', 'SCSS'],
+          description: "A to-do application, made with Vue 3 to try out the new composition API. Stores to-do items in the browser's localStorage. Easily check/uncheck items. Also created a version with vanilla JavaScript to see how it differs from using a framework.",
+          github: 'https://github.com/Richardvbr/Vue-3-To-do-Application'
         },
         {
           img: require("../assets/hero_todo.jpg"),
@@ -134,12 +146,14 @@ $softwareBGColor: #c3e7cf;
       box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
       position: relative;
       transition: 0.2s ease;
+      border-radius: 5px;
 
       &:hover {
         box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.4);
       }
 
       img {
+        border-radius: 5px 5px 0 0;
         width: 100%;
         display: block;
         clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
@@ -169,6 +183,12 @@ $softwareBGColor: #c3e7cf;
           font-size: 12px;
           background-color: $softwareBGColor;
         }
+      }
+
+      .project-note {
+        font-weight: bold;
+        font-size: 14px;
+        font-style: italic;
       }
 
       p {
