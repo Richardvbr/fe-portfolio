@@ -60,7 +60,7 @@ export default {
           imgAlt: 'Weather App',
           url: 'https://todays-weather-rvbr.herokuapp.com/',
           title: 'Weather App',
-          software: ['JavaScript', 'HTML5', 'SCSS', 'AdobeXD'],
+          software: ['JavaScript', 'HTML', 'SCSS', 'AdobeXD'],
           description: "Weather application that displays local current weather information. Fetches weather data using the Dark Sky API. API calls are done on a Node/Express back-end so that the API key is hidden and secured.",
           note: "Note: may take a moment to load due to free Node.js hosting",
           github: 'https://github.com/Richardvbr/Todaysweather'
@@ -70,7 +70,7 @@ export default {
           imgAlt: 'Front-end Portfolio',
           url: 'https://www.brunschot.dev/',
           title: 'Front-end Portfolio',
-          software: ['Vue.js', 'HTML5', 'SCSS', 'AdobeXD'],
+          software: ['Vue.js', 'HTML', 'SCSS', 'AdobeXD'],
           description: "Portfolio website to showcase my work as a front-end developer. Component-based Vue.js application. New portfolio items are added to the grid automatically using JSON and for-loops. Opted for a clean design that is easy on the eyes. Responsive design and scroll-based animations.",
           github: 'https://github.com/Richardvbr/fe-portfolio'
         },
@@ -79,7 +79,7 @@ export default {
           imgAlt: 'Landing Page',
           url: 'https://richardvbr-landing-page.netlify.app/',
           title: 'Landing Page',
-          software: ['HTML5', 'SCSS', 'JavaScript'],
+          software: ['HTML', 'SCSS', 'JavaScript'],
           description: "Fully responsive landing page based on an existing design. Coded using a mobile-first approach. Reponsive navbar that toggles between the default view and a hamburger menu based on device width. Toggleable features using JavaScript.",
           github: 'https://github.com/Richardvbr/Landing-page'
         },
@@ -97,7 +97,7 @@ export default {
           imgAlt: 'To-do App',
           url: 'https://richardvbr-todoapp.netlify.app/',
           title: 'To-do App',
-          software: ['JavaScript', 'HTML5', 'CSS'],
+          software: ['JavaScript', 'HTML', 'CSS'],
           description: "To-do application that uses the browser's localStorage to store to-do items. Shows current date and prevents empty inputs.",
           github: 'https://github.com/Richardvbr/Todo-app'
         }
