@@ -9,7 +9,7 @@
       <div class="card-skillset__interface">
         <h3>User interface and tools</h3>
         <ul class="interface-list">
-          <li class="interface-list__item">HTML5, CSS3, SCSS</li>
+          <li class="interface-list__item">HTML, CSS, SCSS</li>
           <li class="interface-list__item">Experience with responsive and mobile-first design</li>
           <li class="interface-list__item">Basic UX/UI skills, good eye for detail</li>
           <li class="interface-list__item">Experience with Bootstrap 5</li>
