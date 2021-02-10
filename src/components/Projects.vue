@@ -156,6 +156,7 @@ $softwareBGColor: #c3e7cf;
         border-radius: 5px 5px 0 0;
         width: 100%;
         display: block;
+        box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.9);
         clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
       }
 
