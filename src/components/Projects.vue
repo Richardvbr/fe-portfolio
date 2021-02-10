@@ -37,11 +37,21 @@ export default {
     return  {
       portfolioJSON: [
         {
+          img: require("../assets/hero_netflix.jpg"),
+          imgAlt: 'Netflix React App',
+          url: 'https://netflix-react-app-fd806.web.app/',
+          title: 'Netlix React App',
+          software: ['React.js', 'Firebase', 'Axios', 'CSS'],
+          description: "Netflix UI clone built with React.js (including Redux and React Router). Fetches data from TMDB API. Single-page, component-based application. Drag-to-scroll poster rows.",
+          note: "Work in progress: authentication (sign-up, sign-in/out) using Firebase.",
+          github: 'https://github.com/Richardvbr/netflix-react-app'
+        },
+        {
           img: require("../assets/hero_3d.jpg"),
           imgAlt: '3D Modeling Portfolio',
           url: 'https://richardvbr-3d-vue.netlify.app/',
           title: '3D Modeling Portfolio',
-          software: ['Vue.js', 'HTML5', 'SCSS', 'AdobeXD'],
+          software: ['Vue.js', 'SCSS', 'AdobeXD'],
           description: "Portfolio website to showcase 3D models. Component-based Vue.js single-page application to provide a performant and modern experience. New portfolio items are added to the grid automatically using JSON and for-loops.",
           github: 'https://github.com/Richardvbr/3d-portfolio-vue'
         },
@@ -78,7 +88,7 @@ export default {
           imgAlt: 'Vue 3 To-do App',
           url: 'https://richardvbr-vue3-todo.netlify.app/',
           title: 'Vue 3 To-do App',
-          software: ['Vue 3', 'JavaScript', 'HTML5', 'SCSS'],
+          software: ['Vue 3', 'JavaScript', 'SCSS'],
           description: "A to-do application, made with Vue 3 to try out the new composition API. Stores to-do items in the browser's localStorage. Easily check/uncheck items. Also created a version with vanilla JavaScript to see how it differs from using a framework.",
           github: 'https://github.com/Richardvbr/Vue-3-To-do-Application'
         },
@@ -156,7 +166,7 @@ $softwareBGColor: #c3e7cf;
         border-radius: 5px 5px 0 0;
         width: 100%;
         display: block;
-        box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.9);
+        border: none;
         clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
       }
 
