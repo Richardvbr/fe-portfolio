@@ -17,7 +17,13 @@
           </p>
         </div>
         <div>
-          <p>{{ project.description }}</p>
+          <ul>
+            <!-- Create li for every description element -->
+            <li v-for="(description, descriptionLoop) in project.description" :key="descriptionLoop">
+            {{ description }}
+            </li>
+          </ul>
+          <!-- <p>{{ project.description }}</p> -->
           <br>
           <p class="project-note">{{ project.note }}</p>
         </div>
@@ -42,7 +48,7 @@ export default {
           url: 'https://netflix-react-app-fd806.web.app/',
           title: 'Netlix React App',
           software: ['React.js', 'Redux', 'Firebase', 'Axios', 'CSS'],
-          description: "Netflix UI clone built with React.js (including Redux and React Router). Fetches data from TMDB API. Single-page, component-based application. Full authentication functionality (sign-up/in/out/guest) using Firebase. Drag-to-scroll poster rows.",
+          description: ['Netflix UI clone built with React.js (including Redux and React Router)', 'Fetches data from TMDB API', 'Single-page, component-based application', 'Full authentication functionality (sign-up/in/out/guest) using Firebase', 'Drag-to-scroll poster rows'],
           github: 'https://github.com/Richardvbr/netflix-react-app'
         },
         {
@@ -51,7 +57,7 @@ export default {
           url: 'https://richardvbr-3d-vue.netlify.app/',
           title: '3D Modeling Portfolio',
           software: ['Vue.js', 'SCSS', 'AdobeXD'],
-          description: "Portfolio website to showcase 3D models. Component-based Vue.js single-page application to provide a performant and modern experience. New portfolio items are added to the grid automatically using JSON and for-loops.",
+          description: ['Portfolio website to showcase 3D models', 'Component-based Vue.js single-page application to provide a performant and modern experience', 'New portfolio items are added to the grid automatically using JSON and for-loops'],
           github: 'https://github.com/Richardvbr/3d-portfolio-vue'
         },
         {
@@ -60,7 +66,7 @@ export default {
           url: 'https://todays-weather-rvbr.herokuapp.com/',
           title: 'Weather App',
           software: ['JavaScript', 'HTML', 'SCSS', 'AdobeXD'],
-          description: "Weather application that displays local current weather information. Fetches weather data using the Dark Sky API. API calls are done on a Node/Express back-end so that the API key is hidden and secured.",
+          description: ['Weather application that displays local current weather information', 'Fetches weather data using the Dark Sky API', 'API calls are done on a Node/Express back-end so that the API key is hidden and secured'],
           note: "Note: may take a moment to load due to free Node.js hosting",
           github: 'https://github.com/Richardvbr/Todaysweather'
         },
@@ -70,7 +76,7 @@ export default {
           url: 'https://www.brunschot.dev/',
           title: 'Front-end Portfolio',
           software: ['Vue.js', 'HTML', 'SCSS', 'AdobeXD'],
-          description: "Portfolio website to showcase my work as a front-end developer. Component-based Vue.js application. New portfolio items are added to the grid automatically using JSON and for-loops. Opted for a clean design that is easy on the eyes. Responsive design and scroll-based animations.",
+          description: ['Portfolio website to showcase my work as a front-end developer', 'Component-based Vue.js application', 'New portfolio items are added to the grid automatically using JSON and for-loops', 'Opted for a clean design that is easy on the eyes', 'Responsive design and scroll-based animations'],
           github: 'https://github.com/Richardvbr/fe-portfolio'
         },
         {
@@ -79,7 +85,7 @@ export default {
           url: 'https://richardvbr-landing-page.netlify.app/',
           title: 'Landing Page',
           software: ['HTML', 'SCSS', 'JavaScript'],
-          description: "Fully responsive landing page based on an existing design. Coded using a mobile-first approach. Reponsive navbar that toggles between the default view and a hamburger menu based on device width. Toggleable features using JavaScript.",
+          description: ['Fully responsive landing page based on an existing design', 'Coded using a mobile-first approach' ,'Reponsive navbar that toggles between the default view and a hamburger menu based on device width', 'Toggleable features using JavaScript'],
           github: 'https://github.com/Richardvbr/Landing-page'
         },
         {
@@ -88,7 +94,7 @@ export default {
           url: 'https://richardvbr-vue3-todo.netlify.app/',
           title: 'Vue 3 To-do App',
           software: ['Vue 3', 'JavaScript', 'SCSS'],
-          description: "A to-do application, made with Vue 3 to try out the new composition API. Stores to-do items in the browser's localStorage. Easily check/uncheck items. Also created a version with vanilla JavaScript to see how it differs from using a framework.",
+          description: ['A to-do application, made with Vue 3 to try out the new composition API', 'Stores to-do items in the browser\'s localStorage', 'Easily check/uncheck items', 'Also created a version with vanilla JavaScript to see how it differs from using a framework'],
           github: 'https://github.com/Richardvbr/Vue-3-To-do-Application'
         },
         {
@@ -97,7 +103,7 @@ export default {
           url: 'https://richardvbr-todoapp.netlify.app/',
           title: 'To-do App',
           software: ['JavaScript', 'HTML', 'CSS'],
-          description: "To-do application that uses the browser's localStorage to store to-do items. Shows current date and prevents empty inputs.",
+          description: ['To-do application that uses the browser\'s localStorage to store to-do items', 'Shows current date and prevents empty inputs'],
           github: 'https://github.com/Richardvbr/Todo-app'
         }
       ]
@@ -193,6 +199,16 @@ $softwareBGColor: #c3e7cf;
           font-size: 12px;
           background-color: $softwareBGColor;
         }
+      }
+
+      ul {
+        width: 85%;
+        margin: 0 auto;
+        padding-left: 10px;
+      }
+
+      li {
+        padding: 5px;
       }
 
       .project-note {
