@@ -42,8 +42,7 @@ export default {
           url: 'https://netflix-react-app-fd806.web.app/',
           title: 'Netlix React App',
           software: ['React.js', 'Redux', 'Firebase', 'Axios', 'CSS'],
-          description: "Netflix UI clone built with React.js (including Redux and React Router). Fetches data from TMDB API. Single-page, component-based application. Drag-to-scroll poster rows.",
-          note: "Work in progress: authentication (sign-up, sign-in/out) using Firebase.",
+          description: "Netflix UI clone built with React.js (including Redux and React Router). Fetches data from TMDB API. Single-page, component-based application. Full authentication functionality (sign-up/in/out/guest) using Firebase. Drag-to-scroll poster rows.",
           github: 'https://github.com/Richardvbr/netflix-react-app'
         },
         {
