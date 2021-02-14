@@ -288,6 +288,7 @@ $softwareBGColor: #c3e7cf;
 
     .grid-item {
       box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.1);
+      height: 41rem;
 
       &:hover {
         transform: none;
