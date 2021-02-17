@@ -49,6 +49,7 @@ export default {
           title: 'Netlix React App',
           software: ['React.js', 'Redux', 'Firebase', 'Axios', 'CSS'],
           description: ['Netflix UI clone built with React.js (including Redux and React Router)', 'Fetches data from TMDB API', 'Single-page, component-based application', 'Full authentication functionality (sign-up/in/out/guest) using Firebase', 'Drag-to-scroll poster rows'],
+          note: 'Work in progress: edit and view list with favorite movies',
           github: 'https://github.com/Richardvbr/netflix-react-app'
         },
         {
@@ -156,7 +157,7 @@ $softwareBGColor: #c3e7cf;
 
     .grid-item {
       width: 100%;
-      height: 37.5rem;
+      height: 39rem;
       background-color: #fff;
       box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
       position: relative;
@@ -190,6 +191,7 @@ $softwareBGColor: #c3e7cf;
       .software {
         display: flex;
         padding: 0 1.5rem;
+        margin-bottom: -1.25rem;
 
         p {
           margin: 0.5rem 0.5rem 0.5rem 0;
