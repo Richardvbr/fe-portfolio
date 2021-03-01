@@ -44,7 +44,7 @@ export default {
 // Variables
 $background-color: #f7f7f7;
 $text-color: #555;
-$accent-color: #3da361;
+$accent-color: #4d6bd8;
 $border-color: #b4b4b4;
 
 #contact-container {
@@ -137,8 +137,8 @@ $border-color: #b4b4b4;
     .submit-button {
       button {
       width: 50%;
-      padding: 0.75rem 3rem;
-      font-size: 20px;
+      padding: 0.75rem 2.5rem;
+      font-size: 18px;
       background: none;
       border: 2px solid $accent-color;
       border-radius: 13px;
@@ -160,7 +160,7 @@ $border-color: #b4b4b4;
 
     label {
       display: block;
-      font-size: 15px;
+      font-size: 17px;
     }
 
     input {
@@ -169,11 +169,17 @@ $border-color: #b4b4b4;
       border-radius: 3px;
       padding: 0.5rem;
       font-family: 'Inter', sans-serif;
-      font-size: 20px;
+      font-size: 17px;
+      color: #555;
+      font-weight: 500;
 
       &:focus {
       border: 1px solid $accent-color;
       outline: 0 none;
+      }
+
+      &:focus-within label {
+        color: red;
       }
     }
 
@@ -188,7 +194,9 @@ $border-color: #b4b4b4;
       padding-left: 0.5rem;
       padding-top: 0.5rem;
       margin-top: 0.2rem;
-      color: $text-color;
+      font-size: 17px;
+      color: #555;
+      font-weight: 500;
 
       &:focus {
         border: 1px solid $accent-color;

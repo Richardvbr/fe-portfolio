@@ -44,7 +44,7 @@ export default {
 $background-color: #f7f7f7;
 $text-color: #555;
 // $accent-color: #038AFF;
-$accent-color: #3da361;
+$accent-color: #4d6bd8;
 
 
 #skillset-container {

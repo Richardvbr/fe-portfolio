@@ -22,7 +22,7 @@ export default {
 // Variables
 $background-color: #f7f7f7;
 $text-color: #333;
-$accent-color: #3da361;
+$accent-color: #4d6bd8;
 
 #nav-container {
   background-color: #fff;

@@ -15,7 +15,7 @@ export default {
 <style scoped lang="scss">
 // Variables
 $text-color: #333;
-$accent-color: #3da361;
+$accent-color: #4d6bd8;
 
 .container {
   height: 3rem;

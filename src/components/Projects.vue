@@ -117,8 +117,8 @@ export default {
 // Variables
 $background-color: #f7f7f7;
 $text-color: #333;
-$accent-color: #3da361;
-$softwareBGColor: #c3e7cf;
+$accent-color: #4d6bd8;
+$softwareBGColor: #c3cae7;
 
 #projects-container {
   max-width: 1150px;
@@ -200,6 +200,7 @@ $softwareBGColor: #c3e7cf;
           margin-bottom: 2rem;
           font-size: 12px;
           background-color: $softwareBGColor;
+          color: #222;
         }
       }
 

@@ -1,8 +1,8 @@
 <template>
   <section id="home-container">
     <div id="home-content">
-      <h1 id="home">I'm <span>Richard van Brunschot</span> <br class="hide-laptop"></h1>
-      <p>I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. I aim to build responsive websites and web apps that are easy to use</p>
+      <h1 id="home"> <span>I build responsive web applications</span> <br class="hide-laptop"></h1>
+      <p>I'm Richard van Brunschot and I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.</p>
       <a v-scroll-to="'#projects-container'" class="button-link">View projects<i class="fas fa-chevron-down"></i></a>
       <img src="../assets/hero_landing.png" alt="Hero-landing">
     </div>
@@ -19,7 +19,7 @@ export default {
 // Variables
 $background-color: #f7f7f7;
 $text-color: #333;
-$accent-color: #3da361;
+$accent-color: #4d6bd8;
 
 
 // Default
@@ -53,7 +53,7 @@ $accent-color: #3da361;
 
     span {
       color: $accent-color;
-      font-weight: bold;
+      font-weight: 700;
     }
 
     p {
@@ -82,7 +82,7 @@ $accent-color: #3da361;
       width: 200px;
 
       &:hover {
-        background-color: #59b479;
+        background-color: #6f86db;
 
         i {
           transform: translateY(5px)
