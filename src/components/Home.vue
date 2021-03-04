@@ -116,7 +116,7 @@ $accent-color: #4d6bd8;
     }
 
     #home-content {
-      padding-top: 10rem;
+      padding-top: 12.5rem;
     }
 
     img {
